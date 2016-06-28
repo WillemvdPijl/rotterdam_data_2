@@ -8,5 +8,5 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="BARCHART"
         android:id="@+id/textView3"
-        android:layout_gravity="center" />
+        android:layout_gravity="center_horizontal|top" />
 </FrameLayout>
