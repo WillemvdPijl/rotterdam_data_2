@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.SQLException;
-//banana
+//bananahammock
 public class Con_sql {
     //Sets connection to the data sources
     static Connection connection = null;
