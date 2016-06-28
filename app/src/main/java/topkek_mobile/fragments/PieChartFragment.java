@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import topkek_mobile.fragments1.R;
 
 /**
- * Created by Remco on 28-6-2016.
+ * Created by Remco on 28-6-2016..
  */
 public class PieChartFragment extends Fragment {
     @Nullable
