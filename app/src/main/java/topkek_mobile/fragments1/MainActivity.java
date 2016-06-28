@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import topkek_mobile.fragments.BarChartFragment;
 import topkek_mobile.fragments.MainFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -90,13 +91,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_barchart) {
-            // Handle the camera action
+            fm.beginTransaction().replace(R.id.content_frame, new BarChartFragment()).commit();
         } else if (id == R.id.nav_linechart) {
 
         } else if (id == R.id.nav_piechart) {
 
-        } else if (id == R.id.nav_manage) {
-
+        } else if (id == R.id.nav_main) {
+            fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
