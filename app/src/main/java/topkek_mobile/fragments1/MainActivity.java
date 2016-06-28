@@ -15,7 +15,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import topkek_mobile.fragments.BarChartFragment;
+import topkek_mobile.fragments.LineChartFragment;
 import topkek_mobile.fragments.MainFragment;
+import topkek_mobile.fragments.PieChartFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -93,8 +95,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_barchart) {
             fm.beginTransaction().replace(R.id.content_frame, new BarChartFragment()).commit();
         } else if (id == R.id.nav_linechart) {
+            fm.beginTransaction().replace(R.id.content_frame, new LineChartFragment()).commit();
 
         } else if (id == R.id.nav_piechart) {
+            fm.beginTransaction().replace(R.id.content_frame, new PieChartFragment()).commit();
 
         } else if (id == R.id.nav_main) {
             fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
