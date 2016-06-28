@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import topkek_mobile.fragments.BarChartFragment;
 import topkek_mobile.fragments.LineChartFragment;
 import topkek_mobile.fragments.MainFragment;
+import topkek_mobile.fragments.MapsFragment;
 import topkek_mobile.fragments.PieChartFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -102,11 +103,14 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_main) {
             fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
+        } else if (id == R.id.nav_maps) {
+            fm.beginTransaction().replace(R.id.content_frame, new MapsFragment()).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
