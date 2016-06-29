@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import topkek_mobile.fragments.BarChartFragment;
+import topkek_mobile.fragments.CalenderFragment;
 import topkek_mobile.fragments.LineChartFragment;
 import topkek_mobile.fragments.MainFragment;
 import topkek_mobile.fragments.MapsFragment;
@@ -94,15 +95,14 @@ public class MainActivity extends AppCompatActivity
             fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
         } else if (id == R.id.nav_maps) {
             fm.beginTransaction().replace(R.id.content_frame, new MapsFragment()).commit();
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_calender) {
+            fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         }
 
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
+        }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 }
+
