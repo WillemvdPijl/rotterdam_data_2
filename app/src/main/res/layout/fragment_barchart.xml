@@ -2,19 +2,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="420dp"
-        android:layout_height="595dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="BARCHART"
-        android:id="@+id/textView3"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="BARCHART"
-        android:id="@+id/textView"
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="476dp"
+        android:id="@+id/view"
         android:layout_gravity="center" />
 </FrameLayout>
