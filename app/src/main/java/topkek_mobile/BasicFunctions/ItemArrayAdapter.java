@@ -1,4 +1,4 @@
-package topkek_mobile.fragments1;
+package topkek_mobile.BasicFunctions;
 
 /**
  * Created by Dave on 28-6-2016.
@@ -13,6 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
+
+import topkek_mobile.fragments1.R;
 
 public class ItemArrayAdapter extends ArrayAdapter {
     private List scoreList = new ArrayList();

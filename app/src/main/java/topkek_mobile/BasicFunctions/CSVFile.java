@@ -1,4 +1,4 @@
-package topkek_mobile.fragments1;
+package topkek_mobile.BasicFunctions;
 
 /**
  * Created by Dave on 28-6-2016.

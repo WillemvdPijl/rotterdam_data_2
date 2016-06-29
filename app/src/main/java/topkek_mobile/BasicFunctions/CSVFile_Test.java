@@ -1,4 +1,4 @@
-package topkek_mobile.fragments1;
+package topkek_mobile.BasicFunctions;
 
 import android.app.Activity;
 import android.os.Parcelable;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.ListView;
 import java.io.InputStream;
 import java.util.List;
+
+import topkek_mobile.fragments1.R;
 //Mag ik pushen.
 
 public class CSVFile_Test extends Activity {
