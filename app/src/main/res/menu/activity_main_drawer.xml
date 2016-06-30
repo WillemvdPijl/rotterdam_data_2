@@ -34,7 +34,7 @@
                 android:id="@+id/nav_note"
                 android:icon="@drawable/note"
                 android:title="Notes"/>
-        </menu>
+        </menu> //push for anthony
     </item>
 
 </menu>
