@@ -26,7 +26,6 @@ import topkek_mobile.fragments1.R;
 
 public class    MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-        private final int ADD_TASK_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,7 +105,9 @@ public class    MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_calender) {
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         }
-
+        //else if (id == R.id.nav_note) {
+          //  fm.beginTransaction().replace(R.id.content_frame, new NoteActivity()).commit();
+        //}
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
