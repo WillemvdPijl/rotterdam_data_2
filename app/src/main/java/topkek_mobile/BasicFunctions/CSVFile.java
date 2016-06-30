@@ -1,7 +1,7 @@
 package topkek_mobile.BasicFunctions;
 
 /**
- * Created by Dave on 28-6-2016.
+ * Created by Dave... on 28-6-2016.
  */
 import java.io.BufferedReader;
 import java.io.IOException;
