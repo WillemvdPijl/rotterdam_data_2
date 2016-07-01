@@ -17,6 +17,7 @@ import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 
 import java.util.ArrayList;
 
+import topkek_mobile.BasicFunctions.MainActivity;
 import topkek_mobile.fragments1.R;
 
 /**
@@ -62,6 +63,7 @@ public class BarChartFragment extends Fragment {
         labels.add("D");
 
         ArrayList<BarEntry> group1 = new ArrayList<>();
+
         group1.add(new BarEntry(3f, 0));
         group1.add(new BarEntry(12f, 1));
         group1.add(new BarEntry(9f, 2));
