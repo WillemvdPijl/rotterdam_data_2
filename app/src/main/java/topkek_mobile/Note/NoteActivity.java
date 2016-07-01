@@ -63,22 +63,22 @@ public class NoteActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // 2 -Make the activity full screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+          //      WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // 3
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.content_note_activity);
 
         // 4
         mDateTimeTextView = (TextView) findViewById(R.id.dateTimeTextView);
         final Button addTaskBtn = (Button) findViewById(R.id.addTaskBtn);
-        final ListView listview = (ListView) findViewById(R.id.taskListview);
-        mList = new ArrayList<String>();
+        ListView listview = (ListView) findViewById(R.id.taskListview);
+        mList = new ArrayList<>();
 
         String savedList = getSharedPreferences(PREFS_TASKS, MODE_PRIVATE).getString(KEY_TASKS_LIST, null);
         if (savedList != null) {
             String[] items = savedList.split(",");
-            mList = new ArrayList<String>(Arrays.asList(items));
+            mList = new ArrayList<>(Arrays.asList(items));
         }
 
         // 5
@@ -142,7 +142,7 @@ public class NoteActivity extends Activity {
     }
 
     public void addTaskClicked(View view) {
-        Intent intent = new Intent(NoteActivity.this, TaskDescriptionActivity.class);
+        Intent intent = new Intent(this, TaskDescriptionActivity.class);
         startActivityForResult(intent, ADD_TASK_REQUEST);
     }
 

@@ -4,6 +4,7 @@ package topkek_mobile.Note;
  * Created by Anthony on 30-6-2016.
  */
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,8 @@ public class TaskDescriptionActivity extends AppCompatActivity {
             setResult(RESULT_CANCELED);
         }
 // 4
+        //Intent noteAct = new Intent(this, NoteActivity.class);
+        //startActivity(noteAct);
         finish();
     }
 

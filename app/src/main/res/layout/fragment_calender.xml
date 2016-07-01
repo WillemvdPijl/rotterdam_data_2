@@ -31,6 +31,7 @@
         android:text="Add Note"
         android:id="@+id/button"
         android:clickable="true"
-        android:onClick="ButtonOnClick" />
+        android:onClick="ButtonOnClick"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

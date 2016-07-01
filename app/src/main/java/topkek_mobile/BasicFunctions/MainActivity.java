@@ -106,7 +106,7 @@ public class    MainActivity extends AppCompatActivity
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         }
         //else if (id == R.id.nav_note) {
-          //  fm.beginTransaction().replace(R.id.content_frame, new NoteActivity()).commit();
+          // fm.beginTransaction().replace(R.id.content_frame, new NoteActivity()).commit();
         //}
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
@@ -114,10 +114,9 @@ public class    MainActivity extends AppCompatActivity
         }
     public void ButtonOnClick(View view)
     {
-        Intent TaskAct = new Intent(this, TaskDescriptionActivity.class);
-        startActivity(TaskAct);
+        Intent NoteAct = new Intent(this, NoteActivity.class);
+        startActivity(NoteAct);
     }
-
 
 }
 
