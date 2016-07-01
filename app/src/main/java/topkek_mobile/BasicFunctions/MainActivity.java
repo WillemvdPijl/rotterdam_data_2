@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import topkek_mobile.Note.NoteActivity;
 import topkek_mobile.Note.TaskDescriptionActivity;
@@ -45,6 +46,7 @@ public class    MainActivity extends AppCompatActivity
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
+
 
 
     }
@@ -101,7 +103,7 @@ public class    MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_main) {
             fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
         } else if (id == R.id.nav_maps) {
-            fm.beginTransaction().replace(R.id.content_frame, new MapsFragment()).commit();
+            startActivity(MapsActivity);
         } else if (id == R.id.nav_calender) {
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         }
