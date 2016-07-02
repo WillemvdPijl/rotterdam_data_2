@@ -103,7 +103,7 @@ public class    MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_main) {
             fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
         } else if (id == R.id.nav_maps) {
-            startActivity(MapsActivity);
+            fm.beginTransaction().replace(R.id.content_frame, new MapsFragment()).commit();
         } else if (id == R.id.nav_calender) {
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         }
