@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import com.google.android.gms.maps.model.LatLng;
 
-public class DirectionsJSONParser {
+public class    DirectionsJSONParser {
 
     /** Receives a JSONObject and returns a list of lists containing latitude and longitude */
     public List<List<HashMap<String,String>>> parse(JSONObject jObject){
