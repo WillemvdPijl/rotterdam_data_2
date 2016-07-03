@@ -22,8 +22,5 @@ public class CalenderFragment extends Fragment {
 
 
 
-
-
-
     }
 }

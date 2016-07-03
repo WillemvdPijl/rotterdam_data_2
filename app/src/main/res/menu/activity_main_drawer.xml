@@ -30,7 +30,11 @@
                 android:id="@+id/nav_maps"
                 android:icon="@drawable/pin"
                 android:title="Maps"/>
-        </menu>
+            <item
+                android:id="@+id/nav_note"
+                android:icon="@drawable/note"
+                android:title="Notes"/>
+        </menu> //push for anthony
     </item>
 
 </menu>

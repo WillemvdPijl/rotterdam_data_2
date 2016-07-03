@@ -1,5 +1,7 @@
 package topkek_mobile.BasicFunctions;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
@@ -10,7 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
+import java.util.Map;
+
+import topkek_mobile.Note.NoteActivity;
+import topkek_mobile.Note.TaskDescriptionActivity;
 import topkek_mobile.fragments.BarChartFragment;
 import topkek_mobile.fragments.CalenderFragment;
 import topkek_mobile.fragments.LineChartFragment;
@@ -19,7 +27,7 @@ import topkek_mobile.fragments.MapsFragment;
 import topkek_mobile.fragments.PieChartFragment;
 import topkek_mobile.fragments1.R;
 
-public class MainActivity extends AppCompatActivity
+public class    MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -40,6 +48,9 @@ public class MainActivity extends AppCompatActivity
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
+
+
+
     }
 
     @Override
@@ -98,11 +109,22 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_calender) {
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         }
-
+        //else if (id == R.id.nav_note) {
+          // fm.beginTransaction().replace(R.id.content_frame, new NoteActivity()).commit();
+        //}
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
         }
+    public void ButtonOnClick(View view)
+    {
+        Intent NoteAct = new Intent(this, NoteActivity.class);
+        startActivity(NoteAct);
+    }
+    public void mapButtonOnClick(View v){
+        Intent MapAct = new Intent(this, MapsActivity.class);
+        startActivity(MapAct);
+    }
 
 }
 

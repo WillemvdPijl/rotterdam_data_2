@@ -26,10 +26,12 @@
         tools:ignore="NewApi" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="121dp"
         android:layout_height="wrap_content"
-        android:text="Make Appointment"
+        android:text="Add Note"
         android:id="@+id/button"
+        android:clickable="true"
+        android:onClick="ButtonOnClick"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
