@@ -15,6 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Map;
+
 import topkek_mobile.Note.NoteActivity;
 import topkek_mobile.Note.TaskDescriptionActivity;
 import topkek_mobile.fragments.BarChartFragment;
@@ -118,6 +120,10 @@ public class    MainActivity extends AppCompatActivity
     {
         Intent NoteAct = new Intent(this, NoteActivity.class);
         startActivity(NoteAct);
+    }
+    public void mapButtonOnClick(View v){
+        Intent MapAct = new Intent(this, MapsActivity.class);
+        startActivity(MapAct);
     }
 
 }

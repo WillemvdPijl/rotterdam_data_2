@@ -9,5 +9,6 @@
         android:layout_height="wrap_content"
         android:text="Go to Maps"
         android:id="@+id/maps"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:onClick="mapButtonOnClick" />
     </FrameLayout>
