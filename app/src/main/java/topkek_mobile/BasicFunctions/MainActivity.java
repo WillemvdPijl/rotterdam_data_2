@@ -1,6 +1,5 @@
 package topkek_mobile.BasicFunctions;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -13,12 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-
-import java.util.Map;
 
 import topkek_mobile.Note.NoteActivity;
-import topkek_mobile.Note.TaskDescriptionActivity;
 import topkek_mobile.fragments.BarChartFragment;
 import topkek_mobile.fragments.CalenderFragment;
 import topkek_mobile.fragments.LineChartFragment;
@@ -27,8 +22,10 @@ import topkek_mobile.fragments.MapsFragment;
 import topkek_mobile.fragments.PieChartFragment;
 import topkek_mobile.fragments1.R;
 
-public class    MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+
+public class    MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    public static CSVReader fietsDiefstal;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +33,10 @@ public class    MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        fietsDiefstal = new CSVReader(this.getApplicationContext(),"fietsdiefstal.csv");
+        fietsDiefstal.test_List();
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
