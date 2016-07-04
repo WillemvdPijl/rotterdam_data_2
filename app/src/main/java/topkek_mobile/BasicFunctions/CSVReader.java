@@ -1,7 +1,7 @@
 package topkek_mobile.BasicFunctions;
 
 /**
- * Created by Dave on 28-6-2016.
+ * Created by Dave on 8-6-2016.
  */
 import android.content.Context;
 
@@ -77,53 +77,53 @@ public class CSVReader implements Idata {
 
 
                 String[] test_row = line.split(csvSplitBy);
-//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[7] + "]");
+                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[8] + "]");
 
-                if (test_row[6].contains("Centrum"))
+                if (test_row[8].contains("Centrum"))
                     Centrum += 1;
 
 
 
 
-                if (test_row[7].contains("Charlois"))
+                if (test_row[8].contains("Charlois"))
                     Charlois += 1.0;
 
 
-                if (test_row[7].contains("Delfshaven"))
+                if (test_row[8].contains("Delfshaven"))
                     Delfshaven += 1.0;
 
 
-                if (test_row[7].contains("Feijenoord"))
+                if (test_row[8].contains("Feijenoord"))
                     Feijenoord += 1.0;
 
 
-                if (test_row[7].contains("Noord"))
+                if (test_row[8].contains("Noord"))
                     Noord += 1.0;
 
-                if (test_row[7].contains("Hillegersberg"))
+                if (test_row[8].contains("Hillegersberg"))
                     Hillegersberg += 1.0;
 
-                if (test_row[7].contains("Overschie"))
+                if (test_row[8].contains("Overschie"))
                     Overschie += 1.0;
 
-                if (test_row[7].contains("Crooswijk"))
+                if (test_row[8].contains("Crooswijk"))
                     Crooswijk += 1.0;
 
-                if (test_row[7].contains("Pernis"))
+                if (test_row[8].contains("Pernis"))
                     Pernis += 1.0;
 
 
-                if (test_row[7].contains("IJsselmonde"))
+                if (test_row[8].contains("IJsselmonde"))
                     IJsselmonde += 1.0;
 
-                if (test_row[7].contains("West"))
+                if (test_row[8].contains("West"))
                     West += 1.0;
 
 
-                if (test_row[7].contains("Ommoord"))
+                if (test_row[8].contains("Ommoord"))
                     Ommoord += 1.0;
 
-                if (test_row[7].contains("Hoogvliet"))
+                if (test_row[8].contains("Hoogvliet"))
                     Hoogvliet += 1.0;
 
 
@@ -141,7 +141,7 @@ public class CSVReader implements Idata {
                 }
             }
         }
-        System.out.println(Centrum);
+        System.out.println(Noord);
     }
 
 
