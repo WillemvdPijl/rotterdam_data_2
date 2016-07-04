@@ -52,6 +52,13 @@ public class CSVReader implements Idata {
     public float GIANT = 0;
     public float UNION = 0;
     public float YAMAHA = 0;
+    public float TOMOS = 0;
+    public float PIAGGIO = 0;
+    public float VESPA = 0;
+    public float GILERA = 0;
+    public float SYM = 0;
+    public float POINTER = 0;
+    public float ALTRA = 0;
     public float OVERIG = 0;
 
     Context context;
@@ -145,7 +152,7 @@ public class CSVReader implements Idata {
             while ((line = bReader.readLine()) != null) {
 
                 String[] test_row = line.split(csvSplitBy);
-//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[3] + "]");
+                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[22] + "]");
 
                 if (test_row[1].substring(3,5).contains("01"))
                     Januari += 1;
@@ -200,6 +207,79 @@ public class CSVReader implements Idata {
     }
 
 
+    @Override
+    public void getMerken() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+
+            while ((line = bReader.readLine()) != null) {
+
+                String[] test_row = line.split(csvSplitBy);
+//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[8] + "]");
+
+                if (test_row[22].contains("GAZELLE"))
+                    GAZELLE += 1;
+
+                if (test_row[22].contains("BATAVUS"))
+                    BATAVUS += 1.0;
+                if (test_row[22].contains("PEUGEOT"))
+                    PEUGEOT += 1.0;
+
+                if (test_row[22].contains("SPARTA"))
+                    SPARTA += 1.0;
+
+                if (test_row[22].contains("GIANT"))
+                    GIANT += 1.0;
+
+                if (test_row[22].contains("UNION"))
+                    UNION += 1.0;
+
+                if (test_row[22].contains("YAMAHA"))
+                    YAMAHA += 1.0;
+
+                if (test_row[22].contains("TOMOS"))
+                    TOMOS += 1.0;
+
+                if (test_row[22].contains("PIAGGIO"))
+                    PIAGGIO += 1.0;
+
+                if (test_row[22].contains("VESPA"))
+                    VESPA += 1.0;
+
+                if (test_row[22].contains("GILERA"))
+                    GILERA += 1.0;
+
+                if (test_row[22].contains("SYM"))
+                    SYM += 1.0;
+
+                if (test_row[22].contains("POINTER"))
+                    POINTER += 1.0;
+
+                if (test_row[22].contains("ALTRA"))
+                    ALTRA += 1.0;
+                else
+                    OVERIG += 1.0;
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println(Noord);
+    }
 
 
     public float getCentrum(){
@@ -214,7 +294,7 @@ public class CSVReader implements Idata {
     public float getOverschie() {
         return Overschie;
     }
-    public float getkCrooswijk() {
+    public float getCrooswijk() {
         return Crooswijk;
     }
     public float getPernis() {
@@ -279,6 +359,52 @@ public class CSVReader implements Idata {
     }
     public float getDecember(){
         return December;
+    }
+
+    public  float getGAZELLE(){
+        return GAZELLE;
+    }
+    public float getBATAVUS(){
+        return BATAVUS;
+    }
+    public float getPEUGEOT(){
+        return PEUGEOT;
+    }
+    public float getSPARTA(){
+        return SPARTA;
+    }
+    public float getGIANT(){
+        return GIANT;
+    }
+    public float getUNION(){
+        return UNION;
+    }
+    public float getYAMAHA(){
+        return YAMAHA;
+    }
+    public float getTOMOS(){
+        return TOMOS;
+    }
+    public float getPIAGGIO(){
+        return PIAGGIO;
+    }
+    public float getVESPA(){
+        return VESPA;
+    }
+    public float getGILERA(){
+        return GILERA;
+    }
+    public float getSYM(){
+        return SYM;
+    }
+    public float getPOINTER(){
+        return POINTER;
+    }
+    public float getALTRA(){
+        return ALTRA;
+    }
+    public float getOVERIG(){
+        return OVERIG;
     }
 
 

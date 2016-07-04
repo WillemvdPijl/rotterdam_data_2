@@ -9,4 +9,6 @@ public interface Idata {
     void getWijken();
 
     void getMaanden();
+
+    void getMerken();
 }

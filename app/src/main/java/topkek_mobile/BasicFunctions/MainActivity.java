@@ -27,7 +27,7 @@ import topkek_mobile.fragments1.R;
 public class    MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     public static CSVReader fietsWijken;
     public static CSVReader diefstalMaanden;
-
+    public static CSVReader fietsMerken;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,9 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         diefstalMaanden = new CSVReader(this.getApplicationContext(),"fietsdiefstal.csv");
         diefstalMaanden.getMaanden();
+
+        fietsMerken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+        fietsMerken.getMerken();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
