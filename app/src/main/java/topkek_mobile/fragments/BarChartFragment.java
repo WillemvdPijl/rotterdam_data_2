@@ -86,11 +86,11 @@ public class BarChartFragment extends Fragment {
 
 
         ArrayList<String> labels = new ArrayList<String>();
-        labels.add("J");
-        labels.add("F");
-        labels.add("M");
+        labels.add("Centrum");
+        labels.add("Charlois");
+        labels.add("Delfshaven");
         labels.add("A");
-//        labels.add("M");
+        labels.add("M");
 //        labels.add("J");
 //        labels.add("J");
 //        labels.add("A");
