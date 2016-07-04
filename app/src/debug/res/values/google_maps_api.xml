@@ -2,6 +2,8 @@
     <!--
     TODO: Before you run your application, you need a Google Maps API key.
 
+
+//AIzaSyBTGYqaTFyVGbS4HyTUnJH8OcEsLkpN450
     To get one, follow this link, follow the directions and press "Create" at the end:
 
     https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=13:B7:2C:91:D6:F5:21:90:F4:87:91:06:45:73:39:E7:C1:AF:78:F8%3Btopkek_mobile.BasicFunctions
@@ -16,6 +18,6 @@
     string in this file.
     -->
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyBTGYqaTFyVGbS4HyTUnJH8OcEsLkpN450
+        AIzaSyBuMO3UTnZ01QnOPeQ3tZpvYo6E-Me5tkg
     </string>
 </resources>
