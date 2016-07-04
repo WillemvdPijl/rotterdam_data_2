@@ -15,6 +15,7 @@ import com.github.mikephil.charting.data.LineDataSet;
 
 import java.util.ArrayList;
 
+import topkek_mobile.BasicFunctions.MainActivity;
 import topkek_mobile.fragments1.R;
 
 
@@ -51,18 +52,19 @@ public class LineChartFragment extends Fragment{
         super.onCreate(savedInstanceState);
 
         ArrayList<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(4, 0));
-        entries.add(new Entry(8, 1));
-        entries.add(new Entry(6, 2));
-        entries.add(new Entry(2, 3));
-        entries.add(new Entry(18, 4));
-        entries.add(new Entry(9, 5));
-        entries.add(new Entry(4, 6));
-        entries.add(new Entry(8, 7));
-        entries.add(new Entry(7, 8));
-        entries.add(new Entry(2, 9));
-        entries.add(new Entry(14, 10));
-        entries.add(new Entry(9, 11));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getJanuari(),0));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getFebruari(),1));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getMaart(),2));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getApril(),3));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getMei(),4));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getJuni(),5));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getJuli(),6));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getAugustus(),7));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getSeptember(),8));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getOktober(),9));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getNovember(),10));
+        entries.add(new Entry(MainActivity.diefstalMaanden.getDecember(),11));
+
 
         LineDataSet dataset = new LineDataSet(entries, "# of Calls");
 
