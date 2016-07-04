@@ -24,7 +24,7 @@ import topkek_mobile.fragments1.R;
 
 
 public class    MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    public static CSVReader fietsDiefstal;
+    public static CSVReader fietsTrommels;
 
 
     @Override
@@ -34,8 +34,8 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fietsDiefstal = new CSVReader(this.getApplicationContext(),"fietsdiefstal.csv");
-        fietsDiefstal.test_List();
+        fietsTrommels = new CSVReader(this.getApplicationContext(),"Fietstrommels.csv");
+        fietsTrommels.test_List();
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

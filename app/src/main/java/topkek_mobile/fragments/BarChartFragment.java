@@ -63,19 +63,19 @@ public class BarChartFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         ArrayList<BarEntry> entries = new ArrayList<>();
-        entries.add(new BarEntry(MainActivity.fietsDiefstal.getCentrum(),0));
-        entries.add(new BarEntry(MainActivity.fietsDiefstal.getCharlois(),1));
-        entries.add(new BarEntry(MainActivity.fietsDiefstal.getDelfshaven(),2));
-        entries.add(new BarEntry(MainActivity.fietsDiefstal.getFeijenoord(),3));
-//        System.out.println(MainActivity.fietsTrommels.getIJsselmonde());
-//        entries.add(new Entry(18, 4));
-        entries.add(new BarEntry(9, 5));
-        entries.add(new BarEntry(4, 6));
-        entries.add(new BarEntry(8, 7));
-        entries.add(new BarEntry(7, 8));
-        entries.add(new BarEntry(2, 9));
-        entries.add(new BarEntry(14, 10));
-//        entries.add(new Entry(9, 11));
+        entries.add(new BarEntry(MainActivity.fietsTrommels.getCentrum(),0));
+        entries.add(new BarEntry(MainActivity.fietsTrommels.getCharlois(),1));
+        entries.add(new BarEntry(MainActivity.fietsTrommels.getDelfshaven(),2));
+        entries.add(new BarEntry(MainActivity.fietsTrommels.getFeijenoord(),3));
+////        System.out.println(MainActivity.fietsTrommels.getIJsselmonde());
+////        entries.add(new Entry(18, 4));
+//        entries.add(new BarEntry(9, 5));
+//        entries.add(new BarEntry(4, 6));
+//        entries.add(new BarEntry(8, 7));
+//        entries.add(new BarEntry(7, 8));
+//        entries.add(new BarEntry(2, 9));
+//        entries.add(new BarEntry(14, 10));
+////        entries.add(new Entry(9, 11));
 
 
 
@@ -90,14 +90,14 @@ public class BarChartFragment extends Fragment {
         labels.add("F");
         labels.add("M");
         labels.add("A");
-        labels.add("M");
-        labels.add("J");
-        labels.add("J");
-        labels.add("A");
-        labels.add("S");
-        labels.add("O");
-        labels.add("N");
-        labels.add("D");
+//        labels.add("M");
+//        labels.add("J");
+//        labels.add("J");
+//        labels.add("A");
+//        labels.add("S");
+//        labels.add("O");
+//        labels.add("N");
+//        labels.add("D");
 
         data = new BarData(labels, dataset1);
         dataset.setColor(Color.RED);
