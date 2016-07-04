@@ -19,6 +19,7 @@ import topkek_mobile.fragments.CalenderFragment;
 import topkek_mobile.fragments.LineChartFragment;
 import topkek_mobile.fragments.MainFragment;
 import topkek_mobile.fragments.MapsFragment;
+import topkek_mobile.fragments.NoteFragment;
 import topkek_mobile.fragments.PieChartFragment;
 import topkek_mobile.fragments1.R;
 
@@ -110,22 +111,25 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         } else if (id == R.id.nav_calender) {
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         }
-        //else if (id == R.id.nav_note) {
-          // fm.beginTransaction().replace(R.id.content_frame, new NoteActivity()).commit();
-        //}
+        else if (id == R.id.nav_note) {
+            fm.beginTransaction().replace(R.id.content_frame, new NoteFragment()).commit();
+        }
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
         }
-    public void ButtonOnClick(View view)
-    {
-        Intent NoteAct = new Intent(this, NoteActivity.class);
-        startActivity(NoteAct);
-    }
+    //public void ButtonOnClick(View view)
+    //{
+    //    Intent NoteAct = new Intent(this, NoteActivity.class);
+    //    startActivity(NoteAct);
+    //}
     public void mapButtonOnClick(View v){
         Intent MapAct = new Intent(this, MapsActivity.class);
         startActivity(MapAct);
     }
-
+    public void noteButtonOnClick(View v){
+        Intent NoteAct = new Intent(this, NoteActivity.class);
+        startActivity(NoteAct);
+    }
 }
 
