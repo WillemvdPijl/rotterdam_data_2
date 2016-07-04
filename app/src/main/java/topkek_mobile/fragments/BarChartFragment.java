@@ -1,9 +1,9 @@
 package topkek_mobile.fragments;
 
 import android.graphics.Color;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,42 +13,79 @@ import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
+//import topkek_mobile.fragments1.Con_sql;
 import topkek_mobile.BasicFunctions.MainActivity;
 import topkek_mobile.fragments1.R;
+
+import static android.text.TextUtils.isEmpty;
 
 /**
  * Created by Willem on 28-6-2016.
  */
 public class BarChartFragment extends Fragment {
     private BarData data;
+    private BarChart barChart;
+
 
     public BarChartFragment() {
-        // Required empty public constructor
+
     }
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_barchart, container, false);
+    }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        BarChart barChart = (BarChart)view.findViewById(R.id.view);
-        barChart.setData(data);
-        barChart.animateY(1500);
-        barChart.zoom(2, 2, 0, 0);
-        Legend legend = barChart.getLegend();
+
+       barChart = (BarChart)view.findViewById(R.id.view);
+     barChart.setDrawGridBackground(false);
+       barChart.setData(data);
+//       barChart.animateY(2500);
+       barChart.setDescription("");
+       Legend legend = barChart.getLegend();
         legend.setPosition(Legend.LegendPosition.BELOW_CHART_CENTER);
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //csvReaderX.run();
+        ArrayList<BarEntry> entries = new ArrayList<>();
+        entries.add(new BarEntry(MainActivity.fietsDiefstal.getCentrum(),0));
+        entries.add(new BarEntry(MainActivity.fietsDiefstal.getCharlois(),1));
+        entries.add(new BarEntry(MainActivity.fietsDiefstal.getDelfshaven(),2));
+        entries.add(new BarEntry(MainActivity.fietsDiefstal.getFeijenoord(),3));
+//        System.out.println(MainActivity.fietsTrommels.getIJsselmonde());
+//        entries.add(new Entry(18, 4));
+        entries.add(new BarEntry(9, 5));
+        entries.add(new BarEntry(4, 6));
+        entries.add(new BarEntry(8, 7));
+        entries.add(new BarEntry(7, 8));
+        entries.add(new BarEntry(2, 9));
+        entries.add(new BarEntry(14, 10));
+//        entries.add(new Entry(9, 11));
 
-        ArrayList<String> labels = new ArrayList<>();
+
+
+        BarDataSet dataset = new BarDataSet(entries, "TEST");
+        ArrayList<IBarDataSet> dataset1 = new ArrayList<>();
+        dataset1.add(dataset);
+//        dataset1.add(dataset);
+
+
+        ArrayList<String> labels = new ArrayList<String>();
         labels.add("J");
         labels.add("F");
         labels.add("M");
@@ -62,51 +99,15 @@ public class BarChartFragment extends Fragment {
         labels.add("N");
         labels.add("D");
 
-        ArrayList<BarEntry> group1 = new ArrayList<>();
+        data = new BarData(labels, dataset1);
+        dataset.setColor(Color.RED);
+//        dataset.setFillColor(Color.LTGRAY);
+        dataset.setValueTextColor(Color.RED);
+        dataset.setHighLightColor(Color.YELLOW);
+//        dataset.setCircleColor(Color.YELLOW);
+//        dataset.setDrawCubic(false);
+//        dataset.setDrawFilled(true);
 
-        group1.add(new BarEntry(3f, 0));
-        group1.add(new BarEntry(12f, 1));
-        group1.add(new BarEntry(9f, 2));
-        group1.add(new BarEntry(8f, 3));
-        group1.add(new BarEntry(12f, 4));
-        group1.add(new BarEntry(9f, 5));
-        group1.add(new BarEntry(8f, 6));
-        group1.add(new BarEntry(12f, 7));
-        group1.add(new BarEntry(9f, 8));
-        group1.add(new BarEntry(8f, 9));
-        group1.add(new BarEntry(12f, 10));
-        group1.add(new BarEntry(9f, 11));
-
-        ArrayList<BarEntry> group2 = new ArrayList<>();
-        group2.add(new BarEntry(6f, 0));
-        group2.add(new BarEntry(8f, 1));
-        group2.add(new BarEntry(15f, 2));
-        group2.add(new BarEntry(6f, 3));
-        group2.add(new BarEntry(8f, 4));
-        group2.add(new BarEntry(15f, 5));
-        group2.add(new BarEntry(6f, 6));
-        group2.add(new BarEntry(8f, 7));
-        group2.add(new BarEntry(15f, 8));
-        group2.add(new BarEntry(6f, 9));
-        group2.add(new BarEntry(8f, 10));
-        group2.add(new BarEntry(15f, 11));
-
-        BarDataSet barDataSet1 = new BarDataSet(group1, "Diefstal");
-        barDataSet1.setColor(Color.YELLOW);
-
-        BarDataSet barDataSet2 = new BarDataSet(group2, "Fietstrommel");
-        barDataSet2.setColor(Color.WHITE);
-
-        ArrayList<IBarDataSet> dataset = new ArrayList<>();
-        dataset.add(barDataSet1);
-        dataset.add(barDataSet2);
-
-        data = new BarData(labels, dataset);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_barchart, container, false);
-    }
 }
