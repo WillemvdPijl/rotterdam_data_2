@@ -4,8 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical">
 
-
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +20,6 @@
             android:layout_height="wrap_content"
             android:text="Search"
             android:id="@+id/Bsearch"
-            android:layout_gravity="right"
             android:onClick="onSearch" />
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -34,34 +31,42 @@
             android:nestedScrollingEnabled="false"
             android:onClick="changeType" />
     </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Switch
+        android:text="@string/show_route"
+        android:id="@+id/switch1"
+        android:checked="false"
+        android:layout_column="45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools" android:layout_width="342dp"
-            android:layout_height="473dp" android:id="@+id/map" tools:context=".MapsActivity"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="360dp"
+            android:layout_height="599dp" android:id="@+id/map" tools:context=".MapsActivity"
             android:name="com.google.android.gms.maps.SupportMapFragment" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="^"
-                android:id="@+id/Bzoomin"
-                android:onClick="onZoom" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="v"
-                android:id="@+id/Bzoomout"
-                android:layout_gravity="center_vertical"
-                android:onClick="onZoom" />
 
         </LinearLayout>
-    </LinearLayout>//go push
+    </LinearLayout>
+
 </LinearLayout>
