@@ -38,16 +38,16 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fietsWijken = new CSVReader(this.getApplicationContext(),"fietsTrommels.csv");
+        fietsWijken = new CSVReader(this.getApplicationContext(), "fietsTrommels.csv");
         fietsWijken.getWijken();
 
-        diefstalMaanden = new CSVReader(this.getApplicationContext(),"fietsdiefstal.csv");
+        diefstalMaanden = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
         diefstalMaanden.getMaanden();
 
         fietsMerken = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsMerken.getMerken();
 
-        fietsKleuren = new CSVReader(this.getApplicationContext(),"fietsDiefstal_naam.csv");
+        fietsKleuren = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsKleuren.getColours();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -61,7 +61,6 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
-
 
 
     }
@@ -114,7 +113,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         } else if (id == R.id.nav_piechart) {
             fm.beginTransaction().replace(R.id.content_frame, new PieChartFragment()).commit();
-        } else if (id == R.id.nav_piechart2){
+        } else if (id == R.id.nav_piechart2) {
             fm.beginTransaction().replace(R.id.content_frame, new PieChartFragment2()).commit();
 
 
@@ -124,26 +123,31 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
             fm.beginTransaction().replace(R.id.content_frame, new MapsFragment()).commit();
         } else if (id == R.id.nav_calender) {
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
-        }
-        else if (id == R.id.nav_note) {
+        } else if (id == R.id.nav_note) {
             fm.beginTransaction().replace(R.id.content_frame, new NoteFragment()).commit();
         }
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-            drawer.closeDrawer(GravityCompat.START);
-            return true;
-        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
     //public void ButtonOnClick(View view)
     //{
     //    Intent NoteAct = new Intent(this, NoteActivity.class);
     //    startActivity(NoteAct);
     //}
-    public void mapButtonOnClick(View v){
+    public void mapButtonOnClick(View v) {
         Intent MapAct = new Intent(this, MapsActivity.class);
         startActivity(MapAct);
     }
-    public void noteButtonOnClick(View v){
+
+    public void noteButtonOnClick(View v) {
         Intent NoteAct = new Intent(this, NoteActivity.class);
         startActivity(NoteAct);
     }
-}
 
+    public void calButtonOnClick(View v) {
+        Intent calAct = new Intent(this, DateActivity.class);
+        startActivity(calAct);
+    }
+}
