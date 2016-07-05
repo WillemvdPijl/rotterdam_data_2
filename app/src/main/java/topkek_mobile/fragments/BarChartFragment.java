@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Legend;
@@ -56,7 +59,8 @@ public class BarChartFragment extends Fragment {
        barChart.setDescription("");
        Legend legend = barChart.getLegend();
         legend.setPosition(Legend.LegendPosition.BELOW_CHART_CENTER);
-    }
+
+}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -69,6 +73,7 @@ public class BarChartFragment extends Fragment {
         entries.add(new BarEntry(MainActivity.fietsWijken.getDelfshaven(),2));
         entries.add(new BarEntry(MainActivity.fietsWijken.getFeijenoord(),3));
         entries.add(new BarEntry(MainActivity.fietsWijken.getHillegersberg(),4));
+
 
 
 //        System.out.println(MainActivity.fietsTrommels.getIJsselmonde());

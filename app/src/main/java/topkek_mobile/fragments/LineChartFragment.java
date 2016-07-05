@@ -69,18 +69,18 @@ public class LineChartFragment extends Fragment{
         LineDataSet dataset = new LineDataSet(entries, "# of Calls");
 
         ArrayList<String> labels = new ArrayList<String>();
-        labels.add("J");
-        labels.add("F");
-        labels.add("M");
-        labels.add("A");
-        labels.add("M");
-        labels.add("J");
-        labels.add("J");
-        labels.add("A");
-        labels.add("S");
-        labels.add("O");
-        labels.add("N");
-        labels.add("D");
+        labels.add("januari");
+        labels.add("februari");
+        labels.add("maart");
+        labels.add("april");
+        labels.add("mei");
+        labels.add("juni");
+        labels.add("juli");
+        labels.add("augustus");
+        labels.add("september");
+        labels.add("oktober");
+        labels.add("november");
+        labels.add("december");
 
         data = new LineData(labels, dataset);
         dataset.setColor(Color.WHITE);
