@@ -1,7 +1,7 @@
 package topkek_mobile.BasicFunctions;
 
 /**
- * Created by Dave on 8-6-2016.
+ * Created by Dave on 7-6-2016.
  */
 import android.content.Context;
 
@@ -82,45 +82,45 @@ public class CSVReader implements Idata {
             while ((line = bReader.readLine()) != null) {
 
                 String[] test_row = line.split(csvSplitBy);
-//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[8] + "]");
+//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[7] + "]");
 
-                if (test_row[8].contains("Centrum"))
+                if (test_row[7].contains("Centrum"))
                     Centrum += 1;
 
-                if (test_row[8].contains("Charlois"))
+                if (test_row[7].contains("Charlois"))
                     Charlois += 1.0;
 
-                if (test_row[8].contains("Delfshaven"))
+                if (test_row[7].contains("Delfshaven"))
                     Delfshaven += 1.0;
 
-                if (test_row[8].contains("Feijenoord"))
+                if (test_row[7].contains("Feijenoord"))
                     Feijenoord += 1.0;
 
-                if (test_row[8].contains("Noord"))
+                if (test_row[7].contains("Noord"))
                     Noord += 1.0;
 
-                if (test_row[8].contains("Hillegersberg"))
+                if (test_row[7].contains("Hillegersberg"))
                     Hillegersberg += 1.0;
 
-                if (test_row[8].contains("Overschie"))
+                if (test_row[7].contains("Overschie"))
                     Overschie += 1.0;
 
-                if (test_row[8].contains("Crooswijk"))
+                if (test_row[7].contains("Crooswijk"))
                     Crooswijk += 1.0;
 
-                if (test_row[8].contains("Pernis"))
+                if (test_row[7].contains("Pernis"))
                     Pernis += 1.0;
 
-                if (test_row[8].contains("IJsselmonde"))
+                if (test_row[7].contains("IJsselmonde"))
                     IJsselmonde += 1.0;
 
-                if (test_row[8].contains("West"))
+                if (test_row[7].contains("West"))
                     West += 1.0;
 
-                if (test_row[8].contains("Ommoord"))
+                if (test_row[7].contains("Ommoord"))
                     Ommoord += 1.0;
 
-                if (test_row[8].contains("Hoogvliet"))
+                if (test_row[7].contains("Hoogvliet"))
                     Hoogvliet += 1.0;
             }
         } catch (FileNotFoundException e) {
@@ -152,7 +152,7 @@ public class CSVReader implements Idata {
             while ((line = bReader.readLine()) != null) {
 
                 String[] test_row = line.split(csvSplitBy);
-                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[22] + "]");
+//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[2] + "]");
 
                 if (test_row[1].substring(3,5).contains("01"))
                     Januari += 1;
@@ -175,7 +175,7 @@ public class CSVReader implements Idata {
                 if (test_row[1].substring(3,5).contains("07"))
                     Juli += 1.0;
 
-                if (test_row[1].substring(3,5).contains("08"))
+                if (test_row[1].substring(3,5).contains("07"))
                     Augustus += 1.0;
 
                 if (test_row[1].substring(3,5).contains("09"))
@@ -220,49 +220,49 @@ public class CSVReader implements Idata {
             while ((line = bReader.readLine()) != null) {
 
                 String[] test_row = line.split(csvSplitBy);
-//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[8] + "]");
+//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[7] + "]");
 
-                if (test_row[22].contains("GAZELLE"))
+                if (test_row[1].contains("GAZELLE"))
                     GAZELLE += 1;
 
-                if (test_row[22].contains("BATAVUS"))
+                if (test_row[1].contains("BATAVUS"))
                     BATAVUS += 1.0;
-                if (test_row[22].contains("PEUGEOT"))
+                if (test_row[1].contains("PEUGEOT"))
                     PEUGEOT += 1.0;
 
-                if (test_row[22].contains("SPARTA"))
+                if (test_row[1].contains("SPARTA"))
                     SPARTA += 1.0;
 
-                if (test_row[22].contains("GIANT"))
+                if (test_row[1].contains("GIANT"))
                     GIANT += 1.0;
 
-                if (test_row[22].contains("UNION"))
+                if (test_row[1].contains("UNION"))
                     UNION += 1.0;
 
-                if (test_row[22].contains("YAMAHA"))
+                if (test_row[1].contains("YAMAHA"))
                     YAMAHA += 1.0;
 
-                if (test_row[22].contains("TOMOS"))
+                if (test_row[1].contains("TOMOS"))
                     TOMOS += 1.0;
 
-                if (test_row[22].contains("PIAGGIO"))
+                if (test_row[1].contains("PIAGGIO"))
                     PIAGGIO += 1.0;
 
-                if (test_row[22].contains("VESPA"))
+                if (test_row[1].contains("VESPA"))
                     VESPA += 1.0;
 
-                if (test_row[22].contains("GILERA"))
+                if (test_row[1].contains("GILERA"))
                     GILERA += 1.0;
 
-                if (test_row[22].contains("SYM"))
+                if (test_row[1].contains("SYM"))
                     SYM += 1.0;
 
-                if (test_row[22].contains("POINTER"))
+                if (test_row[1].contains("POINTER"))
                     POINTER += 1.0;
 
-                if (test_row[22].contains("ALTRA"))
+                if (test_row[1].contains("ALTRA"))
                     ALTRA += 1.0;
-                else
+                if (test_row[1].contains("ONBEKEND"))
                     OVERIG += 1.0;
             }
         } catch (FileNotFoundException e) {

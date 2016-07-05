@@ -36,13 +36,13 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fietsWijken = new CSVReader(this.getApplicationContext(),"Fietstrommels.csv");
+        fietsWijken = new CSVReader(this.getApplicationContext(),"fietsTrommels.csv");
         fietsWijken.getWijken();
 
         diefstalMaanden = new CSVReader(this.getApplicationContext(),"fietsdiefstal.csv");
         diefstalMaanden.getMaanden();
-
-        fietsMerken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+//
+        fietsMerken = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsMerken.getMerken();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

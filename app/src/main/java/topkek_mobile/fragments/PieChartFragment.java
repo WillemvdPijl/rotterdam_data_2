@@ -15,6 +15,7 @@ import com.github.mikephil.charting.data.PieDataSet;
 
 import java.util.ArrayList;
 
+import topkek_mobile.BasicFunctions.MainActivity;
 import topkek_mobile.fragments1.R;
 
 /**
@@ -25,8 +26,6 @@ public class PieChartFragment extends Fragment {
     private PieChart pieChartColour;
     private PieData pieDataColour;
     private PieData pieDataBrand;
-//    private IButton toggleKnoppie;
-//    private ToggleButton toggleKnop;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -41,7 +40,7 @@ public class PieChartFragment extends Fragment {
         pieChartBrand.setData(pieDataBrand); //set pieData into chart
         pieChartBrand.setDescription("Description");
         pieChartBrand.animateY(1500);
-        pieChartBrand.setTouchEnabled(false);
+        pieChartBrand.setTouchEnabled(true);
 
 //        pieChartColour = (PieChart) view.findViewById(R.id.piechartColour);
 //        pieChartColour.setData(pieDataColour);
@@ -60,31 +59,62 @@ public class PieChartFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         ArrayList<Entry> entriesColour = new ArrayList<>();
-        entriesColour.add(new Entry(4f, 0));
-        entriesColour.add(new Entry(8f, 1));
-        entriesColour.add(new Entry(6f, 2));
-        entriesColour.add(new Entry(12f, 3));
-        entriesColour.add(new Entry(18f, 4));
-        entriesColour.add(new Entry(9f, 5));
+//            entriesBrand.add(new Entry(MainActivity.fietsMerken.getGAZELLE(),0));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getBATAVUS(),1));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getPEUGEOT(),2));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getSPARTA(),3));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getGIANT(),4));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getUNION(),5));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getYAMAHA(),6));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getTOMOS(),7));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getPIAGGIO(),8));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getVESPA(),9));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getGILERA(),10));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getSYM(),11));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getPOINTER(),12));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getALTRA(),13));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.getOVERIG(),14));
 
         ArrayList<Entry> entriesBrand = new ArrayList<>();
-        entriesBrand.add(new Entry(9f, 0));
-        entriesBrand.add(new Entry(18f, 1));
-        entriesBrand.add(new Entry(12f, 2));
-        entriesBrand.add(new Entry(6f, 3));
-        entriesBrand.add(new Entry(8f, 4));
-        entriesBrand.add(new Entry(4f, 5));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getGAZELLE(),0));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getBATAVUS(),1));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getPEUGEOT(),2));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getSPARTA(),3));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getGIANT(),4));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getUNION(),5));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getYAMAHA(),6));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getTOMOS(),7));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getPIAGGIO(),8));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getVESPA(),9));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getGILERA(),10));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getSYM(),11));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getPOINTER(),12));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getALTRA(),13));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.getOVERIG(),14));
+
+//        entriesBrand.add(new Entry
 
 
         PieDataSet dataSetColour = new PieDataSet(entriesColour, "");
         PieDataSet dataSetBrand = new PieDataSet(entriesBrand,"");
         ArrayList<String> labels = new ArrayList<String>();
-        labels.add("January");
-        labels.add("February");
-        labels.add("March");
-        labels.add("April");
-        labels.add("May");
-        labels.add("June");
+        labels.add("Gazelle");
+        labels.add("Batavus");
+        labels.add("Peugeot");
+        labels.add("Sparta");
+        labels.add("Giant");
+        labels.add("Union");
+        labels.add("Yamaha");
+        labels.add("Tomos");
+        labels.add("Piaggio");
+        labels.add("Vespa");
+        labels.add("Gilera");
+        labels.add("Sym");
+        labels.add("Pointer");
+        labels.add("Altra");
+        labels.add("Overig");
+
+
 
 
         pieDataColour = new PieData(labels, dataSetColour);
