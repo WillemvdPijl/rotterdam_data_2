@@ -21,6 +21,7 @@ import topkek_mobile.fragments.MainFragment;
 import topkek_mobile.fragments.MapsFragment;
 import topkek_mobile.fragments.NoteFragment;
 import topkek_mobile.fragments.PieChartFragment;
+import topkek_mobile.fragments.PieChartFragment2;
 import topkek_mobile.fragments1.R;
 
 
@@ -28,6 +29,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
     public static CSVReader fietsWijken;
     public static CSVReader diefstalMaanden;
     public static CSVReader fietsMerken;
+    public static CSVReader fietsKleuren;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,9 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         fietsMerken = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsMerken.getMerken();
+
+        fietsKleuren = new CSVReader(this.getApplicationContext(),"fietsDiefstal_naam.csv");
+        fietsKleuren.getColours();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -109,6 +114,9 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         } else if (id == R.id.nav_piechart) {
             fm.beginTransaction().replace(R.id.content_frame, new PieChartFragment()).commit();
+        } else if (id == R.id.nav_piechart2){
+            fm.beginTransaction().replace(R.id.content_frame, new PieChartFragment2()).commit();
+
 
         } else if (id == R.id.nav_main) {
             fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();

@@ -61,6 +61,23 @@ public class CSVReader implements Idata {
     public float ALTRA = 0;
     public float OVERIG = 0;
 
+    public float MEERKLEURIG = 0;
+    public float ONBEKEND = 0;
+    public float GRIJS = 0;
+    public float BLAUW = 0;
+    public float GROEN = 0;
+    public float CHROOM = 0;
+    public float ZILVER = 0;
+    public float ZWART = 0;
+    public float BEIGE = 0;
+    public float ROOD = 0;
+    public float WIT = 0;
+    public float PAARS = 0;
+    public float ORANJE = 0;
+    public float BRUIN = 0;
+    public float KOPER = 0;
+    public float CREME = 0;
+
     Context context;
     String fileName;
 
@@ -139,6 +156,7 @@ public class CSVReader implements Idata {
         System.out.println(Noord);
     }
 
+
     @Override
     public void getMaanden() {
         BufferedReader bReader = null;
@@ -205,6 +223,7 @@ public class CSVReader implements Idata {
         }
         System.out.println("FIETSDIEFSTALLEN    " + Januari+ "      " + Februari+ "    " + Maart+"   " + April+ "   " + Mei+ "  " + Juni+ "  " + Juli+" " + Augustus + "  " + September + " " + Oktober +" " + November+ "   " + December);
     }
+
 
 
     @Override
@@ -279,7 +298,82 @@ public class CSVReader implements Idata {
             }
         }
         System.out.println(Noord);
+
     }
+    @Override
+    public void getColours() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+
+            while ((line = bReader.readLine()) != null) {
+
+                String[] test_row = line.split(csvSplitBy);
+//                System.out.println("csvFile [Value= " + test_row[0] + ", Value=" + test_row[1] + ", Value=" + test_row[7] + "]");
+
+                if (test_row[3].contains("MEERKLEURIG"))
+                    MEERKLEURIG += 1;
+
+                if (test_row[3].contains("ONBEKEND"))
+                    ONBEKEND += 1.0;
+
+                if (test_row[3].contains("GRIJS"))
+                    GRIJS += 1.0;
+
+                if (test_row[3].contains("BLAUW"))
+                    BLAUW += 1.0;
+
+                if (test_row[3].contains("GROEN"))
+                    GROEN += 1.0;
+
+                if (test_row[3].contains("CHROOM"))
+                    CHROOM += 1.0;
+
+                if (test_row[3].contains("ZILVER"))
+                    ZILVER += 1.0;
+
+                if (test_row[3].contains("BEIGE"))
+                    BEIGE += 1.0;
+
+                if (test_row[3].contains("ROOD"))
+                    ROOD += 1.0;
+
+                if (test_row[3].contains("WIT"))
+                    WIT += 1.0;
+
+                if (test_row[3].contains("PAARS"))
+                    PAARS += 1.0;
+
+                if (test_row[3].contains("ORANJE"))
+                    ORANJE += 1.0;
+
+                if (test_row[3].contains("BRUIN"))
+                    BRUIN += 1.0;
+                if (test_row[3].contains("KOPER"))
+                    KOPER += 1.0;
+                if (test_row[3].contains("CREME"))
+                    CREME += 1.0;
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println(Noord);
+    }
+
 
 
     public float getCentrum(){
@@ -407,7 +501,22 @@ public class CSVReader implements Idata {
         return OVERIG;
     }
 
-
+    public float getMEERKLEURIG(){ return MEERKLEURIG;}
+    public float getONBEKEND(){return ONBEKEND;}
+    public float getGRIJS(){return GRIJS;}
+    public float getBLAUW(){return BLAUW;}
+    public float getGROEN(){return GROEN;}
+    public float getCHROOM(){return CHROOM;}
+    public float getZILVER(){return ZILVER;}
+    public float getZWART(){return ZWART;}
+    public float getBEIGE(){return BEIGE;}
+    public float getROOD(){return ROOD;}
+    public float getWIT(){return WIT;}
+    public float getPAARS(){return PAARS;}
+    public float getORANJE(){return ORANJE;}
+    public float getBRUIN(){return BRUIN;}
+    public float getKOPER(){return KOPER;}
+    public float getCREME(){return CREME;}
 }
 
 

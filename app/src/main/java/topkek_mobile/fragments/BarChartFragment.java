@@ -52,7 +52,7 @@ public class BarChartFragment extends Fragment {
        barChart = (BarChart)view.findViewById(R.id.view);
      barChart.setDrawGridBackground(false);
        barChart.setData(data);
-//       barChart.animateY(2500);
+       barChart.animateY(2500);
        barChart.setDescription("");
        Legend legend = barChart.getLegend();
         legend.setPosition(Legend.LegendPosition.BELOW_CHART_CENTER);
@@ -62,14 +62,17 @@ public class BarChartFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         ArrayList<BarEntry> entries = new ArrayList<>();
         entries.add(new BarEntry(MainActivity.fietsWijken.getCentrum(),0));
         entries.add(new BarEntry(MainActivity.fietsWijken.getCharlois(),1));
         entries.add(new BarEntry(MainActivity.fietsWijken.getDelfshaven(),2));
         entries.add(new BarEntry(MainActivity.fietsWijken.getFeijenoord(),3));
         entries.add(new BarEntry(MainActivity.fietsWijken.getHillegersberg(),4));
+
+
 //        System.out.println(MainActivity.fietsTrommels.getIJsselmonde());
-////        entries.add(new Entry(18, 4));
+//        entries.add(new Entry(18, 4));
 //        entries.add(new BarEntry(9, 5));
 //        entries.add(new BarEntry(4, 6));
 //        entries.add(new BarEntry(8, 7));

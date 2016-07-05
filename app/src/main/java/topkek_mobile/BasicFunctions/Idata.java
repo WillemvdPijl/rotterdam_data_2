@@ -11,4 +11,6 @@ public interface Idata {
     void getMaanden();
 
     void getMerken();
+
+    void getColours();
 }
