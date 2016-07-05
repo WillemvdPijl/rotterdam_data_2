@@ -5,10 +5,17 @@ package topkek_mobile.Note;
  */
 
 import android.content.Intent;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+
+import com.google.android.gms.identity.intents.Address;
+
+import java.util.List;
+import java.util.Locale;
 
 import topkek_mobile.BasicFunctions.GPSTracker;
 import topkek_mobile.fragments1.R;
@@ -20,6 +27,30 @@ public class TaskDescriptionActivity extends AppCompatActivity {
     public static final String EXTRA_TASK_DESCRIPTION = "task";
 
     private EditText mDescriptionView;
+
+    private String getCompleteAddressString(double LATITUDE, double LONGITUDE) {
+        String strAdd = "";
+        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+        try {
+            List<android.location.Address> addresses = geocoder.getFromLocation(LATITUDE, LONGITUDE, 1);
+            if (addresses != null) {
+                android.location.Address returnedAddress = addresses.get(0);
+                StringBuilder strReturnedAddress = new StringBuilder("");
+
+                for (int i = 0; i < returnedAddress.getMaxAddressLineIndex(); i++) {
+                    strReturnedAddress.append(returnedAddress.getAddressLine(i)).append("\n");
+                }
+                strAdd = strReturnedAddress.toString();
+                Log.w("My Current address",""+strReturnedAddress.toString());
+            } else {
+                Log.w("My Current address", "No Address returned!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.w("My Current address", "Canont get Address!");
+        }
+        return strAdd;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +75,9 @@ public class TaskDescriptionActivity extends AppCompatActivity {
              "Your Location is -\nLat: " + latitude + "\nLong: "
              + longitude, Toast.LENGTH_LONG).show(); **/
 
-            String taskDescription = (mDescriptionView.getText().toString() + ("\n - Lat: " + gps.getLatitude() + ", Long: " + gps.getLatitude()));
+
+            String taskDescription = (mDescriptionView.getText().toString() + (getCompleteAddressString(gps.getLatitude(),gps.getLatitude())));
+
 
             if (!taskDescription.isEmpty()) {
                 // 2
@@ -66,7 +99,7 @@ public class TaskDescriptionActivity extends AppCompatActivity {
             } else {
             gps.showSettingsAlert();
             }
-
+        System.out.println("LATITUDEEEEE:" + gps.getLatitude()+"LONGITUDEEEEE " + gps.getLongitude());
         }
 
 }
