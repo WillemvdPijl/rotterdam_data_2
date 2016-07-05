@@ -1,43 +1,35 @@
 package topkek_mobile.BasicFunctions;
 
 import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.List;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.io.BufferedReader;
-
-import org.json.JSONObject;
+import java.util.List;
 
 import topkek_mobile.fragments1.R;
 
@@ -45,6 +37,8 @@ import topkek_mobile.fragments1.R;
 public class MapsActivity extends FragmentActivity {
     GoogleMap mMap;
     ArrayList<LatLng> markerPoints;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -274,14 +268,18 @@ public class MapsActivity extends FragmentActivity {
             mMap.addPolyline(lineOptions);
         }
     }
-    public void changeType(View view)
-    {
-        if(mMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL)
-        {
+    public void changeType(View view) {
+        if (mMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL) {
             mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-        }
-        else
+        } else
             mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+    }
+    private void setUpMap() {
+
+        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        LatLng test = new LatLng(51.823963, 4.477295);
+        mMap.addMarker(new MarkerOptions().position(test).title("iets"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(test));
     }
 
 }
