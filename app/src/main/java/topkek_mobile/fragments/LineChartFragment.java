@@ -94,6 +94,3 @@ public class LineChartFragment extends Fragment{
     }
 
 }
-
-
-

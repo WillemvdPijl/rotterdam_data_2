@@ -41,7 +41,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         diefstalMaanden = new CSVReader(this.getApplicationContext(),"fietsdiefstal.csv");
         diefstalMaanden.getMaanden();
-//
+
         fietsMerken = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsMerken.getMerken();
 

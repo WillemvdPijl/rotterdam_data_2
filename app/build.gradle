@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "topkek_mobile.fragments1"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
@@ -35,4 +35,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:9.2.0'
     compile 'com.google.maps.android:android-maps-utils:0.4.+'
     compile 'com.google.android.gms:play-services-ads:9.2.0'
+    compile 'com.google.android.gms:play-services-location:7.3.0'
 }
