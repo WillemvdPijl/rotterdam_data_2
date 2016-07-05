@@ -12,8 +12,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
-import com.google.android.gms.identity.intents.Address;
-
 import java.util.List;
 import java.util.Locale;
 
@@ -76,7 +74,7 @@ public class TaskDescriptionActivity extends AppCompatActivity {
              + longitude, Toast.LENGTH_LONG).show(); **/
 
 
-            String taskDescription = (mDescriptionView.getText().toString() + (getCompleteAddressString(gps.getLatitude(),gps.getLatitude())));
+            String taskDescription = (mDescriptionView.getText().toString() + " - " + (getCompleteAddressString(gps.getLatitude(),gps.getLongitude())));
 
 
             if (!taskDescription.isEmpty()) {
