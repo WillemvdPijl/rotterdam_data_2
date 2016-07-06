@@ -11,6 +11,10 @@
             android:icon="@drawable/barchart"
             android:title="Barchart" />
         <item
+            android:id="@+id/nav_barchartselect"
+            android:icon="@drawable/barchart"
+            android:title="BarchartSelect" />
+        <item
             android:id="@+id/nav_linechart"
             android:icon="@drawable/linechart"
             android:title="Linechart" />

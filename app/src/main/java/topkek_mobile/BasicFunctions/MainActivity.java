@@ -2,8 +2,8 @@ package topkek_mobile.BasicFunctions;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,9 +12,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Spinner;
 
 import topkek_mobile.Note.NoteActivity;
 import topkek_mobile.fragments.BarChartFragment;
+import topkek_mobile.fragments.BarChartSelectFragment;
 import topkek_mobile.fragments.CalenderFragment;
 import topkek_mobile.fragments.LineChartFragment;
 import topkek_mobile.fragments.MainFragment;
@@ -30,6 +32,8 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
     public static CSVReader diefstalMaanden;
     public static CSVReader fietsMerken;
     public static CSVReader fietsKleuren;
+    private static final String[] deelgem = new String[]{" ", "Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg"};
+    private Spinner s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +66,51 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
 
+        //Spinner s = (Spinner) findViewById(R.id.spin);
 
+
+
+//        s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                Toast.makeText(MainActivity.this, parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
+
+
+        /** s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        @Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String selectedItem = parent.getItemAtPosition(position).toString();
+        if(selectedItem.equals("0")){//doe mn stuff hier
+        }
+        else if (selectedItem.equals("1")){}
+        }
+
+        @Override public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+        }); **/
+
+//s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//    @Override
+//    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+//    }
+//
+//    @Override
+//    public void onNothingSelected(AdapterView<?> parent) {
+//
+//    }
+//});
     }
+
+
+
 
     @Override
     public void onBackPressed() {
@@ -108,7 +155,10 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         if (id == R.id.nav_barchart) {
             fm.beginTransaction().replace(R.id.content_frame, new BarChartFragment()).commit();
-        } else if (id == R.id.nav_linechart) {
+        } else if (id == R.id.nav_barchartselect) {
+            fm.beginTransaction().replace(R.id.content_frame, new BarChartSelectFragment()).commit();
+
+        }else if (id == R.id.nav_linechart) {
             fm.beginTransaction().replace(R.id.content_frame, new LineChartFragment()).commit();
 
         } else if (id == R.id.nav_piechart) {
