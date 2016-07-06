@@ -135,12 +135,12 @@ public class BarChartFragment extends Fragment {
             labels.add("A");
             labels.add("M");
         labels.add("J");
-        labels.add("J");
-        labels.add("A");
-        labels.add("S");
-        labels.add("O");
-        labels.add("N");
-        labels.add("D");
+//        labels.add("J");
+//        labels.add("A");
+//        labels.add("S");
+//        labels.add("O");
+//        labels.add("N");
+//        labels.add("D");
 
             data = new BarData(labels, dataset1);
             dataset.setColor(Color.RED);
