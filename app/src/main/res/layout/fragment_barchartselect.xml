@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:padding="10dip"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="fill_parent">
 
     <Button
         android:layout_width="179dp"
@@ -11,5 +11,29 @@
         android:text="Centrum"
         android:id="@+id/centrum"
         android:onClick="cenButtonOnClick" />
+
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:text="Charlois"
+        android:id="@+id/charlois"
+        android:onClick="cenButtonOnClick"
+        android:layout_gravity="right|top" />
+
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:text="Delfshaven"
+        android:id="@+id/delfshaven"
+        android:onClick="cenButtonOnClick"
+        android:layout_gravity="left|center_vertical" />
+
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:text="Feijenoord"
+        android:id="@+id/feyenoord"
+        android:onClick="cenButtonOnClick"
+        android:layout_gravity="left|bottom" />
 
 </FrameLayout>
