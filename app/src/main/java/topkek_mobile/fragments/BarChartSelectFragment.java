@@ -7,15 +7,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import topkek_mobile.fragments1.R;
 
 /**
  * Created by Willem on 5-7-2016.
  */
-public class BarChartSelectFragment extends Fragment {
+public class BarChartSelectFragment extends Fragment implements AdapterView.OnItemSelectedListener{
 
    /** @Nullable
     @Override
@@ -26,7 +28,9 @@ public class BarChartSelectFragment extends Fragment {
 
 
     }**/
-
+   private static final String [] hood =
+           {"Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg", "Noord", "Overschie", "Crooswijk", "Pernis", "Ijsselmonde", "West", "Ommoord", "Hoogvliet",
+           };
 
 
     @Nullable
@@ -35,20 +39,28 @@ public class BarChartSelectFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_barchartselect, container, false);
 
-        String [] values =
-                {"Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg", "Noord", "Overschie", "Crooswijk", "Pernis", "Ijsselmonde", "West", "Ommoord", "Hoogvliet",
-                };
+
         Spinner spinner = (Spinner) v.findViewById(R.id.spin);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, values);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_spinner_item, hood);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner.setAdapter(adapter);
 
         return v;
 
+    }
 
-
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
     }
 
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+    
+    public void showSelectedArea(String area){
+        Toast.makeText(BarChartSelectFragment.this, "", Toast.LENGTH_SHORT).show();
+    }
 }
+
