@@ -158,6 +158,10 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         startActivity(calAct);
     }
 
+    public void cenButtonOnClick(View v){
+        Intent cenAct = new Intent(this, UserSelectedCharts.class);
+        startActivity(cenAct);
+    }
 
 
 }

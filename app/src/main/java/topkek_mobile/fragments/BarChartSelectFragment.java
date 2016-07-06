@@ -7,19 +7,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 import topkek_mobile.fragments1.R;
 
 /**
  * Created by Willem on 5-7-2016.
  */
-public class BarChartSelectFragment extends Fragment implements AdapterView.OnItemSelectedListener{
+public class BarChartSelectFragment extends Fragment{
 
-   /** @Nullable
+    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_barchartselect, container, false);
@@ -27,7 +23,7 @@ public class BarChartSelectFragment extends Fragment implements AdapterView.OnIt
         return rootView;
 
 
-    }**/
+    }/**
    private static final String [] hood =
            {"Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg", "Noord", "Overschie", "Crooswijk", "Pernis", "Ijsselmonde", "West", "Ommoord", "Hoogvliet",
            };
@@ -51,16 +47,26 @@ public class BarChartSelectFragment extends Fragment implements AdapterView.OnIt
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        Fragment frag;
 
-    }
+        switch(i){
+            case 1:
+
+                //frag = new SelectedChart("Centrum");
+                //showSelectedArea("Centrum");
+                break;
+            case 2:
+                //frag = new SelectedChart("Charlois");
+                //showSelectedArea("Charlois");
+                break;
+
+
+        }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
-    
-    public void showSelectedArea(String area){
-        Toast.makeText(BarChartSelectFragment.this, "", Toast.LENGTH_SHORT).show();
-    }
+  }**/
 }
 

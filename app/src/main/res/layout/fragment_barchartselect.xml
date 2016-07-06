@@ -5,24 +5,11 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
-        android:layout_marginBottom="5dp"/>
-
-    <!--<Spinner-->
-    <!--android:id="@+id/spinner"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:entries="@array/wijkenselect"-->
-    <!--/>-->
-
-    <Spinner
-        android:id="@+id/spin"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/wijkenselect"
-        android:layout_gravity="center" />
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:text="Centrum"
+        android:id="@+id/centrum"
+        android:onClick="cenButtonOnClick" />
 
 </FrameLayout>
