@@ -67,7 +67,6 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
 
-
     }
 
 
@@ -158,4 +157,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         Intent calAct = new Intent(this, DateActivity.class);
         startActivity(calAct);
     }
+
+
+
 }

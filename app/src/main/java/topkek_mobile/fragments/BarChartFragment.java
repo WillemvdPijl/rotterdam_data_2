@@ -94,21 +94,21 @@ public class BarChartFragment extends Fragment {
 //            entries.add(new BarEntry(Float.parseFloat(number.toString()), 3));
 //            entries.add(new BarEntry(Float.parseFloat(number.toString()), 4));
 
-            ;
+        ;
 //        }
 //        for(Object i : sorted_array){
 //            System.out.println(i);
 //        }
 
-            ;
+        ;
 
 
         ArrayList<BarEntry> entries = new ArrayList<>();
         entries.add(new BarEntry(pos1,0));
         entries.add(new BarEntry(pos2,1));
-            entries.add(new BarEntry(pos3, 2));
-            entries.add(new BarEntry(pos4, 3));
-            entries.add(new BarEntry(pos5, 4));
+        entries.add(new BarEntry(pos3, 2));
+        entries.add(new BarEntry(pos4, 3));
+        entries.add(new BarEntry(pos5, 4));
 
 
 //        System.out.println(MainActivity.fietsTrommels.getIJsselmonde());
@@ -122,18 +122,18 @@ public class BarChartFragment extends Fragment {
 ////        entries.add(new Entry(9, 11));
 
 
-            BarDataSet dataset = new BarDataSet(entries, "TEST");
-            ArrayList<IBarDataSet> dataset1 = new ArrayList<>();
-            dataset1.add(dataset);
+        BarDataSet dataset = new BarDataSet(entries, "TEST");
+        ArrayList<IBarDataSet> dataset1 = new ArrayList<>();
+        dataset1.add(dataset);
 //        dataset1.add(dataset);
 
 
-            ArrayList<String> labels = new ArrayList<String>();
-            labels.add("Centrum");
-            labels.add("Charlois");
-            labels.add("Delfshaven");
-            labels.add("A");
-            labels.add("M");
+        ArrayList<String> labels = new ArrayList<String>();
+        labels.add("Centrum");
+        labels.add("Charlois");
+        labels.add("Delfshaven");
+        labels.add("A");
+        labels.add("M");
 //        labels.add("J");
 //        labels.add("J");
 //        labels.add("A");
@@ -142,15 +142,15 @@ public class BarChartFragment extends Fragment {
 //        labels.add("N");
 //        labels.add("D");
 
-            data = new BarData(labels, dataset1);
-            dataset.setColor(Color.RED);
+        data = new BarData(labels, dataset1);
+        dataset.setColor(Color.RED);
 //        dataset.setFillColor(Color.LTGRAY);
-            dataset.setValueTextColor(Color.RED);
-            dataset.setHighLightColor(Color.YELLOW);
+        dataset.setValueTextColor(Color.RED);
+        dataset.setHighLightColor(Color.YELLOW);
 //        dataset.setCircleColor(Color.YELLOW);
 //        dataset.setDrawCubic(false);
 //        dataset.setDrawFilled(true);
 
-        }
-
     }
+
+}

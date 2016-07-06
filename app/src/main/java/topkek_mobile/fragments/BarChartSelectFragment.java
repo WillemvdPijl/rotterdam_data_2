@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import topkek_mobile.fragments1.R;
 
@@ -15,7 +17,7 @@ import topkek_mobile.fragments1.R;
  */
 public class BarChartSelectFragment extends Fragment {
 
-    @Nullable
+   /** @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_barchartselect, container, false);
@@ -23,5 +25,30 @@ public class BarChartSelectFragment extends Fragment {
         return rootView;
 
 
+    }**/
+
+
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View v = inflater.inflate(R.layout.fragment_barchartselect, container, false);
+
+        String [] values =
+                {"Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg", "Noord", "Overschie", "Crooswijk", "Pernis", "Ijsselmonde", "West", "Ommoord", "Hoogvliet",
+                };
+        Spinner spinner = (Spinner) v.findViewById(R.id.spin);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, values);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        spinner.setAdapter(adapter);
+
+        return v;
+
+
+
+
     }
+
+
 }
