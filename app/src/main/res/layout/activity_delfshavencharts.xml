@@ -4,11 +4,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="topkek_mobile.BasicFunctions.UserSelectedCharts">
+    tools:context="topkek_mobile.BasicFunctions.DelfshavenChart">
 
 
     <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/uschart"
+        android:id="@+id/uschart2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />

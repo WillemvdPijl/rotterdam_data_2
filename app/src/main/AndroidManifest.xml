@@ -76,7 +76,19 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name="topkek_mobile.BasicFunctions.UserSelectedCharts"
+            android:name="topkek_mobile.BasicFunctions.CentrumChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.CharloisChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.DelfshavenChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.FeijenoordChart"
             android:label="@string/app_name"
             android:screenOrientation="portrait"></activity>
         <!--

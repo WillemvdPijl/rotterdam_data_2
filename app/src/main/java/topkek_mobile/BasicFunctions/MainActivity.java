@@ -32,8 +32,6 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
     public static CSVReader diefstalMaanden;
     public static CSVReader fietsMerken;
     public static CSVReader fietsKleuren;
-    public static CSVReader_monthContainer fietsContainerWijken;
-    public static CSVReader_monthTheft fietsmaanddiefstal;
     private static final String[] deelgem = new String[]{" ", "Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg"};
     private Spinner s;
 
@@ -56,11 +54,6 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         fietsKleuren = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsKleuren.getColours();
-
-        fietsContainerWijken = new CSVReader_monthContainer(this.getApplicationContext(), "fietsTrommels.csv");
-        fietsContainerWijken.getWijken();
-
-        fietsmaanddiefstal = new CSVReader_monthTheft(this.getApplicationContext(),"fietsdiefstal.csv");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -165,34 +158,31 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         startActivity(calAct);
     }
 
-    //Fragment
     public void cenButtonOnClick(View v){
-        Intent cenAct = new Intent(this, UserSelectedCharts.class);
+        Intent cenAct = new Intent(this, CentrumChart.class);
         startActivity(cenAct);
-
     }
     public void chaButtonOnClick(View v){
-        Intent chaAct = new Intent(this,UserSelectedCharts.class);
+        Intent chaAct = new Intent(this,CharloisChart.class);
         startActivity(chaAct);
-
     }
     public void delButtonOnClick(View v){
-        Intent delAct = new Intent(this,UserSelectedCharts.class);
+        Intent delAct = new Intent(this,DelfshavenChart.class);
         startActivity(delAct);
 
     }
-    public void westButtonOnClick(View v){
-        Intent wesAct = new Intent(this, WestChart.class);
-        startActivity(wesAct);
+    public void feyButtonOnClick(View v){
+        Intent feyAct = new Intent(this, FeijenoordChart.class);
+        startActivity(feyAct);
     }
-    public void ijsButtonOnClick(View v){
-        Intent ijsAct = new Intent(this, IJsselmondeChart.class);
-        startActivity(ijsAct);
-    }
-    public void perButtonOnClick(View v){
-        Intent perAct = new Intent(this, PernisChart.class);
-        startActivity(perAct);
-    }
+//    public void nooButtonOnClick(View v){
+//        Intent nooAct = new Intent(this, UserSelectedCharts.class);
+//        startActivity(nooAct);
+//    }
+//    public void hilButtonOnClick(View v){
+//        Intent hilAct = new Intent(this, UserSelectedCharts.class);
+//        startActivity(hilAct);
+//    }
 
 
 }

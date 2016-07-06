@@ -6,42 +6,34 @@
     android:layout_height="fill_parent">
 
     <Button
-        android:layout_width="179dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Centrum"
         android:id="@+id/centrum"
         android:onClick="cenButtonOnClick" />
 
     <Button
-        android:layout_width="179dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Charlois"
         android:id="@+id/charlois"
         android:onClick="chaButtonOnClick"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Delfshaven"
+        android:id="@+id/delfshaven"
+        android:onClick="delButtonOnClick"
         android:layout_gravity="right|top" />
 
     <Button
-        android:layout_width="179dp"
+        android:layout_width="110dp"
         android:layout_height="50dp"
-        android:text="Pernis"
-        android:id="@+id/pernis"
-        android:onClick="perButtonOnClick"
-        android:layout_gravity="right|bottom" />
-
-    <Button
-        android:layout_width="179dp"
-        android:layout_height="50dp"
-        android:text="IJsselmonde"
-        android:id="@+id/ijsselmonde"
-        android:onClick="ijsButtonOnClick"
-        android:layout_gravity="right|center_vertical" />
-
-    <Button
-        android:layout_width="179dp"
-        android:layout_height="50dp"
-        android:text="West"
-        android:id="@+id/west"
-        android:onClick="westButtonOnClick"
+        android:text="Feijenoord"
+        android:id="@+id/feijenoord"
+        android:onClick="feyButtonOnClick"
         android:layout_gravity="left|center_vertical" />
 
 </FrameLayout>
