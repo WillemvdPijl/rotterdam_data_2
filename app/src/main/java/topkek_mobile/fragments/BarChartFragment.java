@@ -134,7 +134,7 @@ public class BarChartFragment extends Fragment {
             labels.add("Delfshaven");
             labels.add("A");
             labels.add("M");
-        labels.add("J");
+//        labels.add("J");
 //        labels.add("J");
 //        labels.add("A");
 //        labels.add("S");
