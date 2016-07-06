@@ -60,37 +60,37 @@ public class PieChartFragment extends Fragment {
 
         ArrayList<Entry> entriesColour = new ArrayList<>();
 //            entriesBrand.add(new Entry(MainActivity.fietsMerken.getGAZELLE(),0));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getBATAVUS(),1));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getPEUGEOT(),2));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getSPARTA(),3));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getGIANT(),4));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getUNION(),5));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getYAMAHA(),6));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getTOMOS(),7));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getPIAGGIO(),8));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getVESPA(),9));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getGILERA(),10));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getSYM(),11));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getPOINTER(),12));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getALTRA(),13));
-        entriesColour.add(new Entry(MainActivity.fietsMerken.getOVERIG(),14));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.BATAVUS,1));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.PEUGEOT,2));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.SPARTA,3));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.GIANT,4));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.UNION,5));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.YAMAHA,6));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.TOMOS,7));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.PIAGGIO,8));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.VESPA,9));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.GILERA,10));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.SYM,11));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.POINTER,12));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.ALTRA,13));
+        entriesColour.add(new Entry(MainActivity.fietsMerken.OVERIG,14));
 
         ArrayList<Entry> entriesBrand = new ArrayList<>();
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getGAZELLE(),0));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getBATAVUS(),1));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getPEUGEOT(),2));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getSPARTA(),3));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getGIANT(),4));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getUNION(),5));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getYAMAHA(),6));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getTOMOS(),7));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getPIAGGIO(),8));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getVESPA(),9));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getGILERA(),10));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getSYM(),11));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getPOINTER(),12));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getALTRA(),13));
-        entriesBrand.add(new Entry(MainActivity.fietsMerken.getOVERIG(),14));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.GAZELLE,0));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.BATAVUS,1));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.PEUGEOT,2));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.SPARTA,3));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.GIANT,4));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.UNION,5));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.YAMAHA,6));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.TOMOS,7));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.PIAGGIO,8));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.VESPA,9));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.GILERA,10));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.SYM,11));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.POINTER,12));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.ALTRA,13));
+        entriesBrand.add(new Entry(MainActivity.fietsMerken.OVERIG,14));
 
 //        entriesBrand.add(new Entry
 

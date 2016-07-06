@@ -59,41 +59,41 @@ public class PieChartFragment2 extends Fragment {
         super.onCreate(savedInstanceState);
 
         ArrayList<Entry> entriesColour = new ArrayList<>();
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getMEERKLEURIG(),0));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getONBEKEND(),1));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getGRIJS(),2));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getBLAUW(),3));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getGROEN(),4));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getCHROOM(),5));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getZILVER(),6));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getZWART(),7));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getBEIGE(),8));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getROOD(),9));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getWIT(),10));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getPAARS(),11));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getORANJE(),12));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getBRUIN(),13));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getKOPER(),14));
-        entriesColour.add(new Entry(MainActivity.fietsKleuren.getCREME(),15));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.MEERKLEURIG,0));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.ONBEKEND,1));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.GRIJS,2));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.BLAUW,3));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.GROEN,4));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.CHROOM,5));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.ZILVER,6));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.ZWART,7));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.BEIGE,8));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.ROOD,9));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.WIT,10));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.PAARS,11));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.ORANJE,12));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.BRUIN,13));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.KOPER,14));
+        entriesColour.add(new Entry(MainActivity.fietsKleuren.CREME,15));
 
 
         ArrayList<Entry> entriesBrand = new ArrayList<>();
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getMEERKLEURIG(),0));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getONBEKEND(),1));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getGRIJS(),2));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getBLAUW(),3));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getGROEN(),4));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getCHROOM(),5));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getZILVER(),6));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getZWART(),7));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getBEIGE(),8));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getROOD(),9));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getWIT(),10));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getPAARS(),11));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getORANJE(),12));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getBRUIN(),13));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getKOPER(),14));
-        entriesBrand.add(new Entry(MainActivity.fietsKleuren.getCREME(),15));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.MEERKLEURIG,0));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.ONBEKEND,1));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.GRIJS,2));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.BLAUW,3));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.GROEN,4));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.CHROOM,5));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.ZILVER,6));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.ZWART,7));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.BEIGE,8));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.ROOD,9));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.WIT,10));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.PAARS,11));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.ORANJE,12));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.BRUIN,13));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.KOPER,14));
+        entriesBrand.add(new Entry(MainActivity.fietsKleuren.CREME,15));
 
 //        entriesBrand.add(new Entry
 

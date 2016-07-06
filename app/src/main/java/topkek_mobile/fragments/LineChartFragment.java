@@ -52,18 +52,18 @@ public class LineChartFragment extends Fragment{
         super.onCreate(savedInstanceState);
 
         ArrayList<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(MainActivity.diefstalMaanden.getJanuari(),0));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getFebruari(),1));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getMaart(),2));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getApril(),3));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getMei(),4));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getJuni(),5));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getJuli(),6));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getAugustus(),7));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getSeptember(),8));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getOktober(),9));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getNovember(),10));
-        entries.add(new Entry(MainActivity.diefstalMaanden.getDecember(),11));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Januari,0));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Februari,1));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Maart,2));
+        entries.add(new Entry(MainActivity.diefstalMaanden.April,3));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Mei,4));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Juni,5));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Juli,6));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Augustus,7));
+        entries.add(new Entry(MainActivity.diefstalMaanden.September,8));
+        entries.add(new Entry(MainActivity.diefstalMaanden.Oktober,9));
+        entries.add(new Entry(MainActivity.diefstalMaanden.November,10));
+        entries.add(new Entry(MainActivity.diefstalMaanden.December,11));
 
 
         LineDataSet dataset = new LineDataSet(entries, "# of Calls");
