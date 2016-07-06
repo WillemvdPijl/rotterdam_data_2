@@ -161,27 +161,29 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
     public void cenButtonOnClick(View v){
         Intent cenAct = new Intent(this, UserSelectedCharts.class);
         startActivity(cenAct);
+
     }
     public void chaButtonOnClick(View v){
         Intent chaAct = new Intent(this,UserSelectedCharts.class);
         startActivity(chaAct);
+
     }
     public void delButtonOnClick(View v){
         Intent delAct = new Intent(this,UserSelectedCharts.class);
         startActivity(delAct);
 
     }
-    public void feyButtonOnClick(View v){
-        Intent feyAct = new Intent(this, UserSelectedCharts.class);
-        startActivity(feyAct);
+    public void westButtonOnClick(View v){
+        Intent wesAct = new Intent(this, WestChart.class);
+        startActivity(wesAct);
     }
-    public void nooButtonOnClick(View v){
-        Intent nooAct = new Intent(this, UserSelectedCharts.class);
-        startActivity(nooAct);
+    public void ijsButtonOnClick(View v){
+        Intent ijsAct = new Intent(this, IJsselmondeChart.class);
+        startActivity(ijsAct);
     }
-    public void hilButtonOnClick(View v){
-        Intent hilAct = new Intent(this, UserSelectedCharts.class);
-        startActivity(hilAct);
+    public void perButtonOnClick(View v){
+        Intent perAct = new Intent(this, PernisChart.class);
+        startActivity(perAct);
     }
 
 

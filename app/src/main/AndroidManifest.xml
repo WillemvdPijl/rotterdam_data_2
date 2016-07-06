@@ -94,6 +94,18 @@
         <activity
             android:name="topkek_mobile.BasicFunctions.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.PernisChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.IJsselmondeChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.WestChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
         <receiver android:name="topkek_mobile.BasicFunctions.AlarmReceiver" android:process=":remote" />
     </application>
 

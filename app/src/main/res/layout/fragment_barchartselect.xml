@@ -23,17 +23,25 @@
     <Button
         android:layout_width="179dp"
         android:layout_height="50dp"
-        android:text="Delfshaven"
-        android:id="@+id/delfshaven"
-        android:onClick="cenButtonOnClick"
-        android:layout_gravity="left|center_vertical" />
+        android:text="Pernis"
+        android:id="@+id/pernis"
+        android:onClick="perButtonOnClick"
+        android:layout_gravity="right|bottom" />
 
     <Button
         android:layout_width="179dp"
         android:layout_height="50dp"
-        android:text="Feijenoord"
-        android:id="@+id/feyenoord"
-        android:onClick="cenButtonOnClick"
-        android:layout_gravity="left|bottom" />
+        android:text="IJsselmonde"
+        android:id="@+id/ijsselmonde"
+        android:onClick="ijsButtonOnClick"
+        android:layout_gravity="right|center_vertical" />
+
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:text="West"
+        android:id="@+id/west"
+        android:onClick="westButtonOnClick"
+        android:layout_gravity="left|center_vertical" />
 
 </FrameLayout>
