@@ -43,7 +43,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fietsWijken = new CSVReader(this.getApplicationContext(), "fietsTrommels.csv");
+        fietsWijken = new CSVReader(this.getApplicationContext(), "Fietstrommels.csv");
         fietsWijken.getWijken();
 
         diefstalMaanden = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
