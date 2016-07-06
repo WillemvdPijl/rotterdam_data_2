@@ -1,8 +1,4 @@
 package topkek_mobile.BasicFunctions;
-
-/**
- * Created by Dave on 7-6-2016.
- */
 import android.content.Context;
 
 import java.io.BufferedReader;
@@ -11,9 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-
 public class CSVReader implements Idata {
-    InputStream inputStream;
     ArrayList<Float> test = new ArrayList<>();
     //Wijken
     public float Centrum = 0;
@@ -29,7 +23,6 @@ public class CSVReader implements Idata {
     public float West = 0;
     public float Ommoord = 0;
     public float Hoogvliet = 0;
-
     //Maanden
     public float Januari = 0;
     public float Februari = 0;
@@ -43,7 +36,6 @@ public class CSVReader implements Idata {
     public float Oktober = 0;
     public float November = 0;
     public float December = 0;
-
     //Fietsmerken
     public float GAZELLE = 0;
     public float BATAVUS = 0;
@@ -60,7 +52,7 @@ public class CSVReader implements Idata {
     public float POINTER = 0;
     public float ALTRA = 0;
     public float OVERIG = 0;
-
+//kleuren
     public float MEERKLEURIG = 0;
     public float ONBEKEND = 0;
     public float GRIJS = 0;
@@ -89,7 +81,6 @@ public class CSVReader implements Idata {
         BufferedReader bReader = null;
         String line;
         String csvSplitBy = ",";
-
         try {
             InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
             bReader = new BufferedReader(inputStream);
@@ -199,42 +190,30 @@ public class CSVReader implements Idata {
                 String[] test_row = line.split(csvSplitBy);
                 if (test_row[1].contains("GAZELLE"))
                     GAZELLE += 1;
-
                 if (test_row[1].contains("BATAVUS"))
                     BATAVUS += 1.0;
                 if (test_row[1].contains("PEUGEOT"))
                     PEUGEOT += 1.0;
-
                 if (test_row[1].contains("SPARTA"))
                     SPARTA += 1.0;
-
                 if (test_row[1].contains("GIANT"))
                     GIANT += 1.0;
-
                 if (test_row[1].contains("UNION"))
                     UNION += 1.0;
-
                 if (test_row[1].contains("YAMAHA"))
                     YAMAHA += 1.0;
-
                 if (test_row[1].contains("TOMOS"))
                     TOMOS += 1.0;
-
                 if (test_row[1].contains("PIAGGIO"))
                     PIAGGIO += 1.0;
-
                 if (test_row[1].contains("VESPA"))
                     VESPA += 1.0;
-
                 if (test_row[1].contains("GILERA"))
                     GILERA += 1.0;
-
                 if (test_row[1].contains("SYM"))
                     SYM += 1.0;
-
                 if (test_row[1].contains("POINTER"))
                     POINTER += 1.0;
-
                 if (test_row[1].contains("ALTRA"))
                     ALTRA += 1.0;
                 if (test_row[1].contains("ONBEKEND"))
@@ -254,20 +233,72 @@ public class CSVReader implements Idata {
             }
         }
         System.out.println(Noord);
-
     }
     @Override
     public void getColours() {
         BufferedReader bReader = null;
         String line;
         String csvSplitBy = ",";
-
         try {
             InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
             bReader = new BufferedReader(inputStream);
-
             while ((line = bReader.readLine()) != null) {
-
+                String[] test_row = line.split(csvSplitBy);
+                if (test_row[3].contains("MEERKLEURIG"))
+                    MEERKLEURIG += 1;
+                if (test_row[3].contains("ONBEKEND"))
+                    ONBEKEND += 1.0;
+                if (test_row[3].contains("GRIJS"))
+                    GRIJS += 1.0;
+                if (test_row[3].contains("BLAUW"))
+                    BLAUW += 1.0;
+                if (test_row[3].contains("GROEN"))
+                    GROEN += 1.0;
+                if (test_row[3].contains("CHROOM"))
+                    CHROOM += 1.0;
+                if (test_row[3].contains("ZILVER"))
+                    ZILVER += 1.0;
+                if (test_row[3].contains("BEIGE"))
+                    BEIGE += 1.0;
+                if (test_row[3].contains("ROOD"))
+                    ROOD += 1.0;
+                if (test_row[3].contains("WIT"))
+                    WIT += 1.0;
+                if (test_row[3].contains("PAARS"))
+                    PAARS += 1.0;
+                if (test_row[3].contains("ORANJE"))
+                    ORANJE += 1.0;
+                if (test_row[3].contains("BRUIN"))
+                    BRUIN += 1.0;
+                if (test_row[3].contains("KOPER"))
+                    KOPER += 1.0;
+                if (test_row[3].contains("CREME"))
+                    CREME += 1.0;
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println(Noord);
+    }
+    @Override
+    public void getGroupChart() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+            while ((line = bReader.readLine()) != null) {
                 String[] test_row = line.split(csvSplitBy);
                 if (test_row[3].contains("MEERKLEURIG"))
                     MEERKLEURIG += 1;

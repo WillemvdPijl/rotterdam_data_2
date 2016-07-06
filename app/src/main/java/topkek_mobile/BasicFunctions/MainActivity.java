@@ -32,6 +32,8 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
     public static CSVReader diefstalMaanden;
     public static CSVReader fietsMerken;
     public static CSVReader fietsKleuren;
+    public static CSVReader_monthContainer fietsContainerWijken;
+    public static CSVReader_monthTheft fietsmaanddiefstal;
     private static final String[] deelgem = new String[]{" ", "Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg"};
     private Spinner s;
 
@@ -54,6 +56,11 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         fietsKleuren = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsKleuren.getColours();
+
+        fietsContainerWijken = new CSVReader_monthContainer(this.getApplicationContext(), "fietsTrommels.csv");
+        fietsContainerWijken.getWijken();
+
+        fietsmaanddiefstal = new CSVReader_monthTheft(this.getApplicationContext(),"fietsdiefstal.csv");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -158,6 +165,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         startActivity(calAct);
     }
 
+    //Fragment
     public void cenButtonOnClick(View v){
         Intent cenAct = new Intent(this, UserSelectedCharts.class);
         startActivity(cenAct);

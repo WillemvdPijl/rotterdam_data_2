@@ -13,4 +13,6 @@ public interface Idata {
     void getMerken();
 
     void getColours();
+
+    void getGroupChart();
 }
