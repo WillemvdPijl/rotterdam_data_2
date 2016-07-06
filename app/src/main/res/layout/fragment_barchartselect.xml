@@ -7,11 +7,13 @@
         android:layout_height="wrap_content"
         android:layout_width="196dp"
         android:id="@+id/spin"
+        android:entries="@array/wijkenselect"
         android:layout_gravity="center_horizontal|top"></Spinner>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/test"/>
+        android:id="@+id/test"
+        />
 
 </FrameLayout>

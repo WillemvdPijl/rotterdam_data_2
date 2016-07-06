@@ -66,48 +66,9 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
 
-        //Spinner s = (Spinner) findViewById(R.id.spin);
 
-
-
-//        s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(MainActivity.this, parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
-
-
-        /** s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-        @Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String selectedItem = parent.getItemAtPosition(position).toString();
-        if(selectedItem.equals("0")){//doe mn stuff hier
-        }
-        else if (selectedItem.equals("1")){}
-        }
-
-        @Override public void onNothingSelected(AdapterView<?> parent) {
-
-        }
-        }); **/
-
-//s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//    @Override
-//    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//
-//    }
-//
-//    @Override
-//    public void onNothingSelected(AdapterView<?> parent) {
-//
-//    }
-//});
     }
+
 
 
 
@@ -181,11 +142,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         return true;
     }
 
-    //public void ButtonOnClick(View view)
-    //{
-    //    Intent NoteAct = new Intent(this, NoteActivity.class);
-    //    startActivity(NoteAct);
-    //}
+
     public void mapButtonOnClick(View v) {
         Intent MapAct = new Intent(this, MapsActivity.class);
         startActivity(MapAct);
