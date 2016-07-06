@@ -17,7 +17,7 @@
         android:layout_height="50dp"
         android:text="Charlois"
         android:id="@+id/charlois"
-        android:onClick="cenButtonOnClick"
+        android:onClick="chaButtonOnClick"
         android:layout_gravity="right|top" />
 
     <Button
