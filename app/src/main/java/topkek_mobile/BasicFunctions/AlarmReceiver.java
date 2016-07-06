@@ -13,6 +13,8 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
+import topkek_mobile.Note.NoteActivity;
+import topkek_mobile.Note.TaskDescriptionActivity;
 import topkek_mobile.fragments1.R;
 
 public class AlarmReceiver extends BroadcastReceiver {
@@ -20,14 +22,13 @@ public class AlarmReceiver extends BroadcastReceiver {
     private static final int MY_NOTIFICATION_ID=1;
     NotificationManager notificationManager;
     Notification myNotification;
-    private final String myBlog = "http://android-er.blogspot.com/";
 
     @SuppressWarnings("WrongConstant")
     @Override
     public void onReceive(Context context, Intent intent) {
         Toast.makeText(context, "Alarm received!", Toast.LENGTH_LONG).show();
 
-        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(myBlog));
+        Intent myIntent = new Intent(context, NoteActivity.class);
         PendingIntent pendingIntent;
         pendingIntent = PendingIntent.getActivity(
                 context,

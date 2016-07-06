@@ -17,6 +17,7 @@
     <string name="title_activity_note_activity">Note_activity</string>
     <string name="title_activity_maps">Map</string>
     <string name="show_route" />
+    <string name="hoi">hoi</string>
     <string-array name="wijkenselect">
         <item>Centrum</item>
         <item>Charlois</item>
