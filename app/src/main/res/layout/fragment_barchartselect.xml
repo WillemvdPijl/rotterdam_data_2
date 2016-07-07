@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="10dip"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
         android:text="Overschie"
         android:id="@+id/button5"
-        android:layout_gravity="left|bottom"
         android:onClick="overschieButtonOnClick" />
 
     <Button
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="Hillegersberg"
+        android:id="@+id/button3"
+        android:onClick="hilButtonOnClick" />
+
+    <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
         android:text="Noord"
         android:id="@+id/button4"
-        android:layout_gravity="center_horizontal|bottom"
         android:onClick="noordButtonOnClick" />
 
     <Button
-        android:layout_width="110dp"
+        android:layout_width="139dp"
         android:layout_height="50dp"
         android:text="Feijenoord"
         android:id="@+id/feijenoord"
-        android:onClick="feyButtonOnClick"
-        android:layout_gravity="right|center_vertical" />
+        android:onClick="feyButtonOnClick" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
         android:text="crooswijk"
         android:id="@+id/button2"
@@ -39,40 +43,29 @@
         android:onClick="crooswijkButtonOnClick" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hillegersberg"
-        android:id="@+id/button3"
-        android:layout_gravity="center"
-        android:onClick="hilButtonOnClick" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Delfshaven"
-        android:id="@+id/delfshaven"
-        android:onClick="delButtonOnClick"
-        android:layout_gravity="right|top" />
-
-    <Button
-        android:layout_width="100dp"
+        android:layout_width="139dp"
         android:layout_height="50dp"
         android:text="Charlois"
         android:id="@+id/charlois"
-        android:onClick="chaButtonOnClick"
-        android:layout_gravity="center_horizontal|top" />
+        android:onClick="chaButtonOnClick" />
 
     <Button
-        android:layout_width="100dp"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:text="Delfshaven"
+        android:id="@+id/delfshaven"
+        android:onClick="delButtonOnClick" />
+
+    <Button
+        android:layout_width="139dp"
         android:layout_height="50dp"
         android:text="Centrum"
         android:id="@+id/centrum"
-        android:onClick="cenButtonOnClick"
-        android:layout_gravity="right|bottom" />
+        android:onClick="cenButtonOnClick" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
         android:text="Pernis"
         android:id="@+id/button6"
@@ -80,11 +73,10 @@
         android:onClick="perButtonOnClick" />
 
     <Button
-        android:layout_width="64dp"
-        android:layout_height="62dp"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
         android:text="Ijsselmonde"
         android:id="@+id/button7"
-        android:layout_gravity="right|top"
         android:onClick="ijsButtonOnClick" />
 
-</FrameLayout>
+</LinearLayout>
