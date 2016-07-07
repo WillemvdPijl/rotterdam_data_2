@@ -1,102 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="10dip"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="Overschie"
-        android:id="@+id/button5"
-        android:onClick="overschieButtonOnClick" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="Hillegersberg"
-        android:id="@+id/button3"
-        android:onClick="hilButtonOnClick" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Centrum"
+            android:id="@+id/centrum"
+            android:onClick="cenButtonOnClick" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="Noord"
-        android:id="@+id/button4"
-        android:onClick="noordButtonOnClick" />
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Charlois"
+            android:id="@+id/charlois"
+            android:onClick="chaButtonOnClick"
+            android:layout_column="16" />
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:text="Feijenoord"
-        android:id="@+id/feijenoord"
-        android:onClick="feyButtonOnClick" />
+    </TableRow>
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="crooswijk"
-        android:id="@+id/button2"
-        android:layout_gravity="left|center_vertical"
-        android:onClick="crooswijkButtonOnClick" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:text="Charlois"
-        android:id="@+id/charlois"
-        android:onClick="chaButtonOnClick" />
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Delfshaven"
+            android:id="@+id/delfshaven"
+            android:onClick="delButtonOnClick"
+            android:layout_column="0" />
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:text="Delfshaven"
-        android:id="@+id/delfshaven"
-        android:onClick="delButtonOnClick" />
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Feijenoord"
+            android:id="@+id/feijenoord"
+            android:onClick="feyButtonOnClick"
+            android:layout_column="16" />
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:text="Centrum"
-        android:id="@+id/centrum"
-        android:onClick="cenButtonOnClick" />
+    </TableRow>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="Pernis"
-        android:id="@+id/button6"
-        android:layout_gravity="left|top"
-        android:onClick="perButtonOnClick" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="Ijsselmonde"
-        android:id="@+id/button7"
-        android:onClick="ijsButtonOnClick" />
+    </TableRow>
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:text="Hoogvliet"
-        android:id="@+id/hoogvliet"
-        android:onClick="hooButtonOnClick" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:text="Ommoord"
-        android:id="@+id/ommoord"
-        android:onClick="ommButtonOnClick" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:text="Noord"
+            android:id="@+id/button4"
+            android:onClick="noordButtonOnClick"
+            android:layout_column="0" />
 
-    <Button
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:text="West"
-        android:id="@+id/west"
-        android:onClick="wesButtonOnClick" />
-</LinearLayout>
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Hillegersberg"
+            android:id="@+id/button3"
+            android:onClick="hilButtonOnClick"
+            android:layout_column="16" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Overschie"
+            android:id="@+id/button5"
+            android:onClick="overschieButtonOnClick"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="     crooswijk     "
+            android:id="@+id/button2"
+            android:layout_gravity="left|center_vertical"
+            android:onClick="crooswijkButtonOnClick"
+            android:layout_column="16" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:text="             Pernis                "
+            android:id="@+id/button6"
+            android:layout_gravity="left|top"
+            android:onClick="perButtonOnClick"
+            android:layout_column="0"
+            android:layout_width="139dp"
+            android:layout_span="5" />
+
+        <Button
+            android:text="Ijsselmonde"
+            android:id="@+id/button7"
+            android:onClick="ijsButtonOnClick"
+            android:layout_column="16" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="West"
+            android:id="@+id/west"
+            android:onClick="wesButtonOnClick"
+            android:layout_column="0" />
+
+        <Button
+            android:text="Ommoord"
+            android:id="@+id/ommoord"
+            android:onClick="ommButtonOnClick"
+            android:layout_column="16" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Hoogvliet"
+            android:id="@+id/hoogvliet"
+            android:onClick="hooButtonOnClick"
+            android:layout_column="0" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+</TableLayout>
