@@ -23,6 +23,9 @@ public abstract class monthContainer {
     public float CharloisSeptember = 0;
     public float DelfshavenJuni = 0;
     public float DelfshavenJuli = 0;
+    public float DelfshavenFebruari = 0;
+    public float DelfshavenMaart = 0;
+    public float DelfshavenOktober = 0;
     public float DelfshavenOverig = 0;
     public float DelfshavenApril = 0;
     public float DelfshavenAugustus = 0;

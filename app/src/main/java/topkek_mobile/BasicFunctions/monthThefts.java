@@ -19,13 +19,13 @@ public abstract class monthThefts {
     public float TheftCharloisJanuari = 0;
     public float TheftCharloisFebruari = 0;
     public float TheftCharloisMaart = 0;
+    public float TheftCharloisApril = 0;
     public float TheftCharloisMei = 0;
     public float TheftCharloisJuni = 0;
     public float TheftCharloisJuli = 0;
-    public float TheftCharloisApril = 0;
     public float TheftCharloisAugustus = 0;
     public float TheftCharloisSeptember = 0;
-    public float TheftCharloisOktober;
+    public float TheftCharloisOktober = 0;
     public float TheftCharloisNovember = 0;
     public float TheftCharloisDecember = 0;
     public float TheftDelfshavenJanuari = 0;

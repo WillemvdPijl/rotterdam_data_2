@@ -139,6 +139,30 @@ public class CSVReader_monthContainer extends monthContainer {
                         HillegersbergSeptember += 1;
 
                 }
+                if (test_row[7].contains("Delfshaven")){
+                    if (test_row[9].substring(0,1).contains("4"))
+                        DelfshavenApril += 1;
+                    if (test_row[9].substring(0,1).contains("8"))
+                        DelfshavenAugustus += 1;
+                    if (test_row[9].substring(0,1).contains("2"))
+                        DelfshavenFebruari += 1;
+                    if (test_row[9].substring(0,1).contains("1"))
+                        DelfshavenJanuari += 1;
+                    if (test_row[9].substring(0,1).contains("7"))
+                        DelfshavenJuli += 1;
+                    if (test_row[9].substring(0,1).contains("6"))
+                        DelfshavenJuni += 1;
+                    if (test_row[9].substring(0,1).contains("3"))
+                        DelfshavenMaart += 1;
+                    if (test_row[9].substring(0,1).contains("5"))
+                        DelfshavenMei += 1;
+                    if (test_row[9].substring(0,1).contains("11"))
+                        DelfshavenNovember += 1;
+                    if (test_row[9].substring(0,1).contains("10"))
+                        DelfshavenOktober += 1;
+                    if (test_row[9].substring(0,1).contains("9"))
+                        DelfshavenSeptember += 1;
+                }
 
 //                    centrumJanuari += 1;
 //                if (test_row[7].contains("Charlois"))
