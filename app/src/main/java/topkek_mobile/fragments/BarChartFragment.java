@@ -122,7 +122,7 @@ public class BarChartFragment extends Fragment {
 ////        entries.add(new Entry(9, 11));
 
 
-        BarDataSet dataset = new BarDataSet(entries, "TEST");
+        BarDataSet dataset = new BarDataSet(entries, "Top 5 neighborhoods with the most bike containers");
         ArrayList<IBarDataSet> dataset1 = new ArrayList<>();
         dataset1.add(dataset);
 //        dataset1.add(dataset);

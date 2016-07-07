@@ -31,14 +31,33 @@ public class CSVReader_monthTheft extends  monthThefts {
             bReader = new BufferedReader(inputStream);
             while ((line = bReader.readLine()) != null) {
                 String[] test_row = line.split(csvSplitBy);
-                System.out.println(test_row[9].substring(0, 1));
+//                System.out.println(test_row[9].substring(0, 1));
                 if (test_row[6].contains("STAD")) {
-                    if (test_row[2].substring(3, 4).contains("1"))
+                    if (test_row[2].substring(2,3).contains("1"))
                         TheftCentrumJanuari += 1;
-                    if (test_row[2].substring(3, 4).contains("2"))
+                    if (test_row[2].substring(2,3).contains("2"))
                         TheftCentrumFebruari += 1;
-                    if (test_row[2].substring(3, 4).contains("3"))
+                    if (test_row[2].substring(2,3).contains("3"))
                         TheftCentrumMaart += 1;
+                    if (test_row[2].substring(2,3).contains("4"))
+                        TheftCentrumApril += 1;
+                    if (test_row[2].substring(2,3).contains("5"))
+                        TheftCentrumMei += 1;
+                    if (test_row[2].substring(2,3).contains("6"))
+                        TheftCentrumJuni += 1;
+                    if (test_row[2].substring(2,3).contains("7"))
+                        TheftCentrumJuli += 1;
+                    if (test_row[2].substring(2,3).contains("8"))
+                        TheftCentrumAugustus += 1;
+                    if (test_row[2].substring(2,3).contains("9"))
+                        TheftCentrumSeptember += 1;
+                    if (test_row[2].substring(2,3).contains("10"))
+                        TheftCentrumOktober += 1;
+                    if (test_row[2].substring(2,3).contains("11"))
+                        TheftCentrumNovember += 1;
+                    if (test_row[2].substring(2,3).contains("12"))
+                        TheftCentrumDecember += 1;
+
                 }
 //                if (test_row[7].contains("Charlois")) {
 //                    if (test_row[9].substring(0, 1).contains("4"))

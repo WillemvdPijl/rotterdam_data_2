@@ -41,26 +41,26 @@
 //        ArrayList<IBarDataSet> dataSets = null;
 //
 //        ArrayList<BarEntry> valueSet1 = new ArrayList<>();
-        //BarEntry v1e1 = new BarEntry(MainActivity.fietsContainerWijken.CentrumApril, 0); // Jan
-        //valueSet1.add(v1e1);
-        //BarEntry v1e2 = new BarEntry(MainActivity.fietsContainerWijken.CentrumMei, 1); // Feb
-        //valueSet1.add(v1e2);
-        //BarEntry v1e3 = new BarEntry(MainActivity.fietsContainerWijken.CentrumJuni, 2); // Mar
-        //valueSet1.add(v1e3);
-        //BarEntry v1e4 = new BarEntry(MainActivity.fietsContainerWijken.CentrumJuli, 3); // Apr
-        //valueSet1.add(v1e4);
-        //BarEntry v1e5 = new BarEntry(MainActivity.fietsContainerWijken.CentrumAugustus, 4); // May
-        //valueSet1.add(v1e5);
-        //BarEntry v1e6 = new BarEntry(MainActivity.fietsContainerWijken.CentrumSeptember, 5); // Jun
-        //valueSet1.add(v1e6);
+//        BarEntry v1e1 = new BarEntry(MainActivity.fietsContainerWijken.CentrumApril, 0); // Jan
+//        valueSet1.add(v1e1);
+//        BarEntry v1e2 = new BarEntry(MainActivity.fietsContainerWijken.CentrumMei, 1); // Feb
+//        valueSet1.add(v1e2);
+//        BarEntry v1e3 = new BarEntry(MainActivity.fietsContainerWijken.CentrumJuni, 2); // Mar
+//        valueSet1.add(v1e3);
+//        BarEntry v1e4 = new BarEntry(MainActivity.fietsContainerWijken.CentrumJuli, 3); // Apr
+//        valueSet1.add(v1e4);
+//        BarEntry v1e5 = new BarEntry(MainActivity.fietsContainerWijken.CentrumAugustus, 4); // May
+//        valueSet1.add(v1e5);
+//        BarEntry v1e6 = new BarEntry(MainActivity.fietsContainerWijken.CentrumSeptember, 5); // Jun
+//        valueSet1.add(v1e6);
 //
-        //ArrayList<BarEntry> valueSet2 = new ArrayList<>();
-        //BarEntry v2e1 = new BarEntry(MainActivity.fietsmaanddiefstal.TheftCentrumJanuari, 0); // Jan
-        //valueSet2.add(v2e1);
-        //BarEntry v2e2 = new BarEntry(MainActivity.fietsmaanddiefstal.TheftCentrumFebruari, 1); // Feb
-        //valueSet2.add(v2e2);
-        //BarEntry v2e3 = new BarEntry(MainActivity.fietsmaanddiefstal.TheftCentrumMaart, 2); // Mar
-        //valueSet2.add(v2e3);
+//        ArrayList<BarEntry> valueSet2 = new ArrayList<>();
+//        BarEntry v2e1 = new BarEntry(MainActivity.fietsmaanddiefstal.TheftCentrumJanuari, 0); // Jan
+//        valueSet2.add(v2e1);
+//        BarEntry v2e2 = new BarEntry(MainActivity.fietsmaanddiefstal.TheftCentrumFebruari, 1); // Feb
+//        valueSet2.add(v2e2);
+//        BarEntry v2e3 = new BarEntry(MainActivity.fietsmaanddiefstal.TheftCentrumMaart, 2); // Mar
+//        valueSet2.add(v2e3);
 //        BarEntry v2e4 = new BarEntry(60.000f, 3); // Apr
 //        valueSet2.add(v2e4);
 //        BarEntry v2e5 = new BarEntry(20.000f, 4); // May
