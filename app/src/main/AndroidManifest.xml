@@ -134,6 +134,14 @@
             android:name="topkek_mobile.BasicFunctions.WestChart"
             android:label="@string/app_name"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.HoogvlietChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.OmmoordChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
         <receiver android:name="topkek_mobile.BasicFunctions.AlarmReceiver" android:process=":remote" />
     </application>
 

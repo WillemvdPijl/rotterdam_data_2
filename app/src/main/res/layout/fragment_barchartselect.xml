@@ -79,4 +79,24 @@
         android:id="@+id/button7"
         android:onClick="ijsButtonOnClick" />
 
+    <Button
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:text="Hoogvliet"
+        android:id="@+id/hoogvliet"
+        android:onClick="hooButtonOnClick" />
+
+    <Button
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:text="Ommoord"
+        android:id="@+id/ommoord"
+        android:onClick="ommButtonOnClick" />
+
+    <Button
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:text="West"
+        android:id="@+id/west"
+        android:onClick="wesButtonOnClick" />
 </LinearLayout>

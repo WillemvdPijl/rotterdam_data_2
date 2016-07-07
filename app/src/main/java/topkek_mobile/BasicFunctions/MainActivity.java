@@ -210,4 +210,19 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         Intent croosAct = new Intent(this, CrooswijkCharts.class);
         startActivity(croosAct);
     }
+
+    public void hooButtonOnClick(View v) {
+        Intent hooAct = new Intent(this, HoogvlietChart.class);
+        startActivity(hooAct);
+    }
+
+    public void ommButtonOnClick(View v) {
+        Intent ommAct = new Intent(this, OmmoordChart.class);
+        startActivity(ommAct);
+    }
+
+    public void wesButtonOnClick(View v) {
+        Intent wesAct = new Intent(this, WestChart.class);
+        startActivity(wesAct);
+    }
 }
