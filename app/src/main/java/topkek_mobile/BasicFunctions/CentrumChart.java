@@ -1,19 +1,18 @@
 package topkek_mobile.BasicFunctions;
 
         import android.graphics.Color;
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-        import com.github.mikephil.charting.charts.BarChart;
-        import com.github.mikephil.charting.data.BarData;
-        import com.github.mikephil.charting.data.BarDataSet;
-        import com.github.mikephil.charting.data.BarEntry;
-        import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
-        import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
 
-        import topkek_mobile.fragments1.R;
+import topkek_mobile.fragments1.R;
 
 /**
  * Created by Willem on 6-7-2016.
@@ -31,7 +30,6 @@ public class CentrumChart extends AppCompatActivity {
         chart.animateXY(2000, 2000);
         chart.invalidate();
     }
-
     private ArrayList<IBarDataSet> getDataSet() {
         ArrayList<IBarDataSet> dataSets = null;
 

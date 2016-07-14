@@ -26,6 +26,10 @@
             android:id="@+id/nav_piechart2"
             android:icon="@drawable/piechart"
             android:title="Piechart2" />
+        <item
+            android:id="@+id/nav_extraassignmentpiechart"
+            android:icon="@drawable/piechart"
+            android:title="Extra Assignment Piechart" />
     </group>
 
     <item android:title="Tools">
@@ -42,7 +46,7 @@
                 android:id="@+id/nav_note"
                 android:icon="@drawable/note"
                 android:title="Notes"/>
-        </menu> //push for anthony
+        </menu>
     </item>
 
 </menu>

@@ -11,7 +11,6 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
-import android.util.Log;
 
 public class GPSTracker extends Service implements LocationListener{
 
@@ -35,7 +34,9 @@ public class GPSTracker extends Service implements LocationListener{
 		this.context = context;
 		getLocation();
 	}
-	
+
+
+	//Gets the location lat long
 	public Location getLocation() {
 		try {
 			locationManager = (LocationManager) context.getSystemService(LOCATION_SERVICE);
@@ -95,7 +96,7 @@ public class GPSTracker extends Service implements LocationListener{
 		return location;
 	}
 	
-	
+	//Stop using the GPS when needed
 	public void stopUsingGPS() {
 		if(locationManager != null) {
 			locationManager.removeUpdates(GPSTracker.this);

@@ -66,7 +66,7 @@ public class LineChartFragment extends Fragment{
         entries.add(new Entry(MainActivity.diefstalMaanden.December,11));
 
 
-        LineDataSet dataset = new LineDataSet(entries, "# of Calls");
+        LineDataSet dataset = new LineDataSet(entries, "Gemiddelde diefstal per maand");
 
         ArrayList<String> labels = new ArrayList<String>();
         labels.add("januari");
@@ -83,11 +83,11 @@ public class LineChartFragment extends Fragment{
         labels.add("december");
 
         data = new LineData(labels, dataset);
-        dataset.setColor(Color.WHITE);
-        dataset.setFillColor(Color.LTGRAY);
+        dataset.setColor(Color.RED);
+        dataset.setFillColor(Color.RED);
         dataset.setValueTextColor(Color.WHITE);
-        dataset.setHighLightColor(Color.YELLOW);
-        dataset.setCircleColor(Color.YELLOW);
+        dataset.setHighLightColor(Color.BLACK);
+        dataset.setCircleColor(Color.BLACK);
         dataset.setDrawCubic(false);
         dataset.setDrawFilled(true);
 

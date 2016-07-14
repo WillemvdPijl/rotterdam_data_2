@@ -19,18 +19,20 @@
     <string name="show_route" />
     <string name="hoi">hoi</string>
     <string-array name="wijkenselect">
-        <item>Centrum</item>
-        <item>Charlois</item>
-        <item>Delfshaven</item>
-        <item>Feijenoord</item>
-        <item>Hillegersberg</item>
-        <item>Noord</item>
-        <item>Overschie</item>
-        <item>Crooswijk</item>
-        <item>Pernis</item>
-        <item>Ijsselmonde</item>
-        <item>West</item>
-        <item>Ommoord</item>
-        <item>Hoogvliet</item>
+        <item>Gazelle</item>
+        <item>Batavus</item>
+        <item>Peugeot</item>
+        <item>Sparta</item>
+        <item>Giant</item>
+        <item>Union</item>
+        <item>Yamaha</item>
+        <item>Tomos</item>
+        <item>Piaggio</item>
+        <item>Vespa</item>
+        <item>Gilera</item>
+        <item>Sym</item>
+        <item>Pointer</item>
+        <item>Alta</item>
+        <item>Overig</item>
     </string-array>
 </resources>

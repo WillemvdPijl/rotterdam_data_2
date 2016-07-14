@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Gazelle"
+            android:id="@+id/gazelle"
+            android:onClick="GazButtonOnClick" />
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Peugeot"
+            android:id="@+id/peugeot"
+            android:onClick="PeuButtonOnClick"
+            android:layout_column="16" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Sparta"
+            android:id="@+id/sparta"
+            android:onClick="SpaButtonOnClick"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Giant"
+            android:id="@+id/giant"
+            android:onClick="GiaButtonOnClick"
+            android:layout_column="16" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:text="Union"
+            android:id="@+id/union"
+            android:onClick="UniButtonOnClick"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Yamaha"
+            android:id="@+id/yamaha"
+            android:onClick="YahButtonOnClick"
+            android:layout_column="16" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Button-->
+            <!--android:layout_width="139dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Tomos"-->
+            <!--android:id="@+id/tomos"-->
+            <!--android:onClick="TomButtonOnClick"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="139dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="              Piaggio          "-->
+            <!--android:id="@+id/piaggio"-->
+            <!--android:layout_gravity="left|center_vertical"-->
+            <!--android:onClick="PiaButtonOnClick"-->
+            <!--android:layout_column="16" />-->
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Button-->
+            <!--style="?android:attr/buttonStyleSmall"-->
+            <!--android:text="              Vespa              "-->
+            <!--android:id="@+id/vespa"-->
+            <!--android:layout_gravity="left|top"-->
+            <!--android:onClick="VesButtonOnClick"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_width="139dp"-->
+            <!--android:layout_span="5" />-->
+
+        <!--<Button-->
+            <!--android:text="Gilera"-->
+            <!--android:id="@+id/gilera"-->
+            <!--android:onClick="GilButtonOnClick"-->
+            <!--android:layout_column="16" />-->
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Button-->
+            <!--android:text="Sym"-->
+            <!--android:id="@+id/sym"-->
+            <!--android:onClick="SymButtonOnClick"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<Button-->
+            <!--android:text="Pointer"-->
+            <!--android:id="@+id/pointer"-->
+            <!--android:onClick="PoiButtonOnClick"-->
+            <!--android:layout_column="16" />-->
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Button-->
+            <!--android:layout_width="139dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Alta"-->
+            <!--android:id="@+id/alta"-->
+            <!--android:onClick="AltButtonOnClick"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<Button-->
+            <!--android:text="Overig"-->
+            <!--android:id="@+id/overig"-->
+            <!--android:onClick="OveButtonOnClick"-->
+            <!--android:layout_column="16" />-->
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+</TableLayout>

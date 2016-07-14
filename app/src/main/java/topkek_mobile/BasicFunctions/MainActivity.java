@@ -12,12 +12,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Spinner;
 
 import topkek_mobile.Note.NoteActivity;
 import topkek_mobile.fragments.BarChartFragment;
 import topkek_mobile.fragments.BarChartSelectFragment;
 import topkek_mobile.fragments.CalenderFragment;
+import topkek_mobile.fragments.ExtraAssignmentPiechartFragment;
 import topkek_mobile.fragments.LineChartFragment;
 import topkek_mobile.fragments.MainFragment;
 import topkek_mobile.fragments.MapsFragment;
@@ -27,15 +27,20 @@ import topkek_mobile.fragments.PieChartFragment2;
 import topkek_mobile.fragments1.R;
 
 
-public class    MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     public static CSVReader fietsWijken;
     public static CSVReader diefstalMaanden;
     public static CSVReader fietsMerken;
     public static CSVReader fietsKleuren;
     public static CSVReader_monthContainer fietsContainerWijken;
     public static CSVReader_monthTheft fietsmaanddiefstal;
+    public static CSVReader GazelleWijken;
+    public static CSVReader PeugeotWijken;
+    public static CSVReader GiantWijken;
+    public static CSVReader SpartaWijken;
+    public static CSVReader YamahaWijken;
+    public static CSVReader UnionWijken;
     private static final String[] deelgem = new String[]{" ", "Centrum", "Charlois", "Delfshaven", "Feijenoord", "Hillegersberg"};
-    private Spinner s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         fietsWijken = new CSVReader(this.getApplicationContext(), "Fietstrommels.csv");
         fietsWijken.getWijken();
@@ -57,11 +63,29 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         fietsKleuren = new CSVReader(this.getApplicationContext(), "fietsDiefstal_naam.csv");
         fietsKleuren.getColours();
 
-        fietsContainerWijken = new CSVReader_monthContainer(this.getApplicationContext(), "fietsTrommels.csv");
+        fietsContainerWijken = new CSVReader_monthContainer(this.getApplicationContext(), "Fietstrommels.csv");
         fietsContainerWijken.getWijken();
-//
+
         fietsmaanddiefstal = new CSVReader_monthTheft(this.getApplicationContext(),"fietsdiefstal.csv");
         fietsmaanddiefstal.getWijken();
+
+        GazelleWijken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+        GazelleWijken.getGazelle();
+
+        PeugeotWijken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+        PeugeotWijken.getPeugeot();
+
+        SpartaWijken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+        SpartaWijken.getSparta();
+
+        GiantWijken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+        GiantWijken.getGiant();
+
+        YamahaWijken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+        YamahaWijken.getYamaha();
+
+        UnionWijken = new CSVReader(this.getApplicationContext(), "fietsdiefstal.csv");
+        UnionWijken.getUnion();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -74,6 +98,7 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_frame, new MainFragment()).commit();
+
 
     }
 
@@ -144,6 +169,9 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
             fm.beginTransaction().replace(R.id.content_frame, new CalenderFragment()).commit();
         } else if (id == R.id.nav_note) {
             fm.beginTransaction().replace(R.id.content_frame, new NoteFragment()).commit();
+        }
+        else if (id == R.id.nav_extraassignmentpiechart) {
+            fm.beginTransaction().replace(R.id.content_frame, new ExtraAssignmentPiechartFragment()).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -228,4 +256,34 @@ public class    MainActivity extends AppCompatActivity implements NavigationView
         Intent wesAct = new Intent(this, WestChart.class);
         startActivity(wesAct);
     }
+
+    public void GazButtonOnClick(View v){
+        Intent GazAct = new Intent(this, GazChart.class);
+        startActivity(GazAct);
+    }
+
+    public void PeuButtonOnClick(View v){
+        Intent PeuAct = new Intent(this, PeuChart.class);
+        startActivity(PeuAct);
+    }
+    public void SpaButtonOnClick(View v){
+        Intent SpaAct = new Intent(this, SpaChart.class);
+        startActivity(SpaAct);
+    }
+
+    public void GiaButtonOnClick(View v){
+        Intent GiaAct = new Intent(this, GiaChart.class);
+        startActivity(GiaAct);
+    }
+
+    public void YahButtonOnClick(View v){
+        Intent YahAct = new Intent(this, YahChart.class);
+        startActivity(YahAct);
+    }
+
+    public void UniButtonOnClick(View v){
+        Intent UniAct = new Intent(this, UniChart.class);
+        startActivity(UniAct);
+    }
+
 }

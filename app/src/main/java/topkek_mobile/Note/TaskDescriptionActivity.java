@@ -65,14 +65,6 @@ public class TaskDescriptionActivity extends AppCompatActivity {
 
 
         if(gps.canGetLocation()) {
-            /**double latitude = gps.getLatitude();
-             double longitude = gps.getLongitude();
-
-             Toast.makeText(
-             getApplicationContext(),
-             "Your Location is -\nLat: " + latitude + "\nLong: "
-             + longitude, Toast.LENGTH_LONG).show(); **/
-
 
             String taskDescription = (mDescriptionView.getText().toString() + " - " + (getCompleteAddressString(gps.getLatitude(),gps.getLongitude())));
 

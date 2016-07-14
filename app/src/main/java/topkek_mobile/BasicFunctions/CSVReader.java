@@ -4,7 +4,6 @@ import android.content.Context;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 public class CSVReader implements Idata {
@@ -69,6 +68,25 @@ public class CSVReader implements Idata {
     public float BRUIN = 0;
     public float KOPER = 0;
     public float CREME = 0;
+//wijken jwz
+    public float Stad2 = 0;
+    public float Charlois2 = 0;
+    public float Spijkenisse2 = 0;
+    public float Schiedam2 = 0;
+    public float Zuid2 = 0;
+    public float Ridderkerk2 = 0;
+    public float Crooswijk2 = 0;
+    public float Capelle2 = 0;
+    public float Maassluis2 = 0;
+    public float Kralingen2 = 0;
+    public float Krimpen2 = 0;
+    public float OudeWesten2 = 0;
+    public float Maashaven2 = 0;
+    public float Hoogvliet2 = 0;
+    public float AlexanderZuid2 = 0;
+    public float Lansingerland2 = 0;
+    public float Hellevoetsluis2 = 0;
+
 
     Context context;
     String fileName;
@@ -234,6 +252,399 @@ public class CSVReader implements Idata {
         }
         System.out.println(Noord);
     }
+    @Override
+    public void getGazelle() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+            while ((line = bReader.readLine()) != null) {
+                String[] test_row = line.split(csvSplitBy);
+               // System.out.println(test_row[0]);
+                if (test_row[22].contains("GAZELLE")) {
+                  if (test_row[6].contains("STAD"))
+                    Stad2 += 1;
+                  else if (test_row[6].contains("CHARLOIS"))
+                    Charlois2 += 1.0;
+                  else if (test_row[6].contains("SPIJKENISSE"))
+                    Spijkenisse2 += 1.0;
+                  else if (test_row[6].contains("SCHIEDAM"))
+                    Schiedam2 += 1.0;
+                  else if (test_row[6].contains("ZUID"))
+                    Zuid2 += 1.0;
+                  else if (test_row[6].contains("RIDDERKERK"))
+                    Ridderkerk2 += 1.0;
+                  else if (test_row[6].contains("CROOSWIJK"))
+                    Crooswijk2 += 1.0;
+                  else if (test_row[6].contains("MAASSLUIS"))
+                    Maassluis2 += 1.0;
+                  else if (test_row[6].contains("KRALINGEN"))
+                    Kralingen2 += 1.0;
+                  else if (test_row[6].contains("CAPELLE"))
+                    Capelle2 += 1.0;
+                  else if (test_row[6].contains("KRIMPEN"))
+                    Krimpen2 += 1.0;
+                  else if (test_row[6].contains("OUDE WESTEN"))
+                    OudeWesten2 += 1.0;
+                  else if (test_row[6].contains("MAASHAVEN"))
+                    Maashaven2 += 1.0;
+                  else if (test_row[6].contains("HOOGVLIET"))
+                    Hoogvliet2 += 1.0;
+                  else if (test_row[6].contains("ALEXANDER ZUID"))
+                    AlexanderZuid2 += 1.0;
+                  else if (test_row[6].contains("LANSINGERLAND"))
+                    Lansingerland2 += 1.0;
+                  else if (test_row[6].contains("HELLEVOETSLUIS"))
+                    Hellevoetsluis2 += 1.0;
+
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println("TESTDINGETJE"+ " " + Stad2);
+    }
+
+    @Override
+    public void getPeugeot() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+            while ((line = bReader.readLine()) != null) {
+                String[] test_row = line.split(csvSplitBy);
+                // System.out.println(test_row[0]);
+                if (test_row[22].contains("PEUGEOT")) {
+                    if (test_row[6].contains("STAD"))
+                        Stad2 += 1;
+                    else if (test_row[6].contains("CHARLOIS"))
+                        Charlois2 += 1.0;
+                    else if (test_row[6].contains("SPIJKENISSE"))
+                        Spijkenisse2 += 1.0;
+                    else if (test_row[6].contains("SCHIEDAM"))
+                        Schiedam2 += 1.0;
+                    else if (test_row[6].contains("ZUID"))
+                        Zuid2 += 1.0;
+                    else if (test_row[6].contains("RIDDERKERK"))
+                        Ridderkerk2 += 1.0;
+                    else if (test_row[6].contains("CROOSWIJK"))
+                        Crooswijk2 += 1.0;
+                    else if (test_row[6].contains("MAASSLUIS"))
+                        Maassluis2 += 1.0;
+                    else if (test_row[6].contains("KRALINGEN"))
+                        Kralingen2 += 1.0;
+                    else if (test_row[6].contains("CAPELLE"))
+                        Capelle2 += 1.0;
+                    else if (test_row[6].contains("KRIMPEN"))
+                        Krimpen2 += 1.0;
+                    else if (test_row[6].contains("OUDE WESTEN"))
+                        OudeWesten2 += 1.0;
+                    else if (test_row[6].contains("MAASHAVEN"))
+                        Maashaven2 += 1.0;
+                    else if (test_row[6].contains("HOOGVLIET"))
+                        Hoogvliet2 += 1.0;
+                    else if (test_row[6].contains("ALEXANDER ZUID"))
+                        AlexanderZuid2 += 1.0;
+                    else if (test_row[6].contains("LANSINGERLAND"))
+                        Lansingerland2 += 1.0;
+                    else if (test_row[6].contains("HELLEVOETSLUIS"))
+                        Hellevoetsluis2 += 1.0;
+
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println("TESTDINGETJE"+ " " + Stad2);
+    }
+
+    @Override
+    public void getSparta() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+            while ((line = bReader.readLine()) != null) {
+                String[] test_row = line.split(csvSplitBy);
+                // System.out.println(test_row[0]);
+                if (test_row[22].contains("SPARTA")) {
+                    if (test_row[6].contains("STAD"))
+                        Stad2 += 1;
+                    else if (test_row[6].contains("CHARLOIS"))
+                        Charlois2 += 1.0;
+                    else if (test_row[6].contains("SPIJKENISSE"))
+                        Spijkenisse2 += 1.0;
+                    else if (test_row[6].contains("SCHIEDAM"))
+                        Schiedam2 += 1.0;
+                    else if (test_row[6].contains("ZUID"))
+                        Zuid2 += 1.0;
+                    else if (test_row[6].contains("RIDDERKERK"))
+                        Ridderkerk2 += 1.0;
+                    else if (test_row[6].contains("CROOSWIJK"))
+                        Crooswijk2 += 1.0;
+                    else if (test_row[6].contains("MAASSLUIS"))
+                        Maassluis2 += 1.0;
+                    else if (test_row[6].contains("KRALINGEN"))
+                        Kralingen2 += 1.0;
+                    else if (test_row[6].contains("CAPELLE"))
+                        Capelle2 += 1.0;
+                    else if (test_row[6].contains("KRIMPEN"))
+                        Krimpen2 += 1.0;
+                    else if (test_row[6].contains("OUDE WESTEN"))
+                        OudeWesten2 += 1.0;
+                    else if (test_row[6].contains("MAASHAVEN"))
+                        Maashaven2 += 1.0;
+                    else if (test_row[6].contains("HOOGVLIET"))
+                        Hoogvliet2 += 1.0;
+                    else if (test_row[6].contains("ALEXANDER ZUID"))
+                        AlexanderZuid2 += 1.0;
+                    else if (test_row[6].contains("LANSINGERLAND"))
+                        Lansingerland2 += 1.0;
+                    else if (test_row[6].contains("HELLEVOETSLUIS"))
+                        Hellevoetsluis2 += 1.0;
+
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println("TESTDINGETJE"+ " " + Stad2);
+    }
+
+    @Override
+    public void getGiant() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+            while ((line = bReader.readLine()) != null) {
+                String[] test_row = line.split(csvSplitBy);
+                // System.out.println(test_row[0]);
+                if (test_row[22].contains("GIANT")) {
+                    if (test_row[6].contains("STAD"))
+                        Stad2 += 1;
+                    else if (test_row[6].contains("CHARLOIS"))
+                        Charlois2 += 1.0;
+                    else if (test_row[6].contains("SPIJKENISSE"))
+                        Spijkenisse2 += 1.0;
+                    else if (test_row[6].contains("SCHIEDAM"))
+                        Schiedam2 += 1.0;
+                    else if (test_row[6].contains("ZUID"))
+                        Zuid2 += 1.0;
+                    else if (test_row[6].contains("RIDDERKERK"))
+                        Ridderkerk2 += 1.0;
+                    else if (test_row[6].contains("CROOSWIJK"))
+                        Crooswijk2 += 1.0;
+                    else if (test_row[6].contains("MAASSLUIS"))
+                        Maassluis2 += 1.0;
+                    else if (test_row[6].contains("KRALINGEN"))
+                        Kralingen2 += 1.0;
+                    else if (test_row[6].contains("CAPELLE"))
+                        Capelle2 += 1.0;
+                    else if (test_row[6].contains("KRIMPEN"))
+                        Krimpen2 += 1.0;
+                    else if (test_row[6].contains("OUDE WESTEN"))
+                        OudeWesten2 += 1.0;
+                    else if (test_row[6].contains("MAASHAVEN"))
+                        Maashaven2 += 1.0;
+                    else if (test_row[6].contains("HOOGVLIET"))
+                        Hoogvliet2 += 1.0;
+                    else if (test_row[6].contains("ALEXANDER ZUID"))
+                        AlexanderZuid2 += 1.0;
+                    else if (test_row[6].contains("LANSINGERLAND"))
+                        Lansingerland2 += 1.0;
+                    else if (test_row[6].contains("HELLEVOETSLUIS"))
+                        Hellevoetsluis2 += 1.0;
+
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println("TESTDINGETJE"+ " " + Stad2);
+    }
+
+
+    @Override
+    public void getUnion() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+            while ((line = bReader.readLine()) != null) {
+                String[] test_row = line.split(csvSplitBy);
+                // System.out.println(test_row[0]);
+                if (test_row[22].contains("UNION")) {
+                    if (test_row[6].contains("STAD"))
+                        Stad2 += 1;
+                    else if (test_row[6].contains("CHARLOIS"))
+                        Charlois2 += 1.0;
+                    else if (test_row[6].contains("SPIJKENISSE"))
+                        Spijkenisse2 += 1.0;
+                    else if (test_row[6].contains("SCHIEDAM"))
+                        Schiedam2 += 1.0;
+                    else if (test_row[6].contains("ZUID"))
+                        Zuid2 += 1.0;
+                    else if (test_row[6].contains("RIDDERKERK"))
+                        Ridderkerk2 += 1.0;
+                    else if (test_row[6].contains("CROOSWIJK"))
+                        Crooswijk2 += 1.0;
+                    else if (test_row[6].contains("MAASSLUIS"))
+                        Maassluis2 += 1.0;
+                    else if (test_row[6].contains("KRALINGEN"))
+                        Kralingen2 += 1.0;
+                    else if (test_row[6].contains("CAPELLE"))
+                        Capelle2 += 1.0;
+                    else if (test_row[6].contains("KRIMPEN"))
+                        Krimpen2 += 1.0;
+                    else if (test_row[6].contains("OUDE WESTEN"))
+                        OudeWesten2 += 1.0;
+                    else if (test_row[6].contains("MAASHAVEN"))
+                        Maashaven2 += 1.0;
+                    else if (test_row[6].contains("HOOGVLIET"))
+                        Hoogvliet2 += 1.0;
+                    else if (test_row[6].contains("ALEXANDER ZUID"))
+                        AlexanderZuid2 += 1.0;
+                    else if (test_row[6].contains("LANSINGERLAND"))
+                        Lansingerland2 += 1.0;
+                    else if (test_row[6].contains("HELLEVOETSLUIS"))
+                        Hellevoetsluis2 += 1.0;
+
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println("TESTDINGETJE"+ " " + Stad2);
+    }
+
+    @Override
+    public void getYamaha() {
+        BufferedReader bReader = null;
+        String line;
+        String csvSplitBy = ",";
+        try {
+            InputStreamReader inputStream = new InputStreamReader(context.getAssets().open(fileName));
+            bReader = new BufferedReader(inputStream);
+            while ((line = bReader.readLine()) != null) {
+                String[] test_row = line.split(csvSplitBy);
+                // System.out.println(test_row[0]);
+                if (test_row[22].contains("YAMAHA")) {
+                    if (test_row[6].contains("STAD"))
+                        Stad2 += 1;
+                    else if (test_row[6].contains("CHARLOIS"))
+                        Charlois2 += 1.0;
+                    else if (test_row[6].contains("SPIJKENISSE"))
+                        Spijkenisse2 += 1.0;
+                    else if (test_row[6].contains("SCHIEDAM"))
+                        Schiedam2 += 1.0;
+                    else if (test_row[6].contains("ZUID"))
+                        Zuid2 += 1.0;
+                    else if (test_row[6].contains("RIDDERKERK"))
+                        Ridderkerk2 += 1.0;
+                    else if (test_row[6].contains("CROOSWIJK"))
+                        Crooswijk2 += 1.0;
+                    else if (test_row[6].contains("MAASSLUIS"))
+                        Maassluis2 += 1.0;
+                    else if (test_row[6].contains("KRALINGEN"))
+                        Kralingen2 += 1.0;
+                    else if (test_row[6].contains("CAPELLE"))
+                        Capelle2 += 1.0;
+                    else if (test_row[6].contains("KRIMPEN"))
+                        Krimpen2 += 1.0;
+                    else if (test_row[6].contains("OUDE WESTEN"))
+                        OudeWesten2 += 1.0;
+                    else if (test_row[6].contains("MAASHAVEN"))
+                        Maashaven2 += 1.0;
+                    else if (test_row[6].contains("HOOGVLIET"))
+                        Hoogvliet2 += 1.0;
+                    else if (test_row[6].contains("ALEXANDER ZUID"))
+                        AlexanderZuid2 += 1.0;
+                    else if (test_row[6].contains("LANSINGERLAND"))
+                        Lansingerland2 += 1.0;
+                    else if (test_row[6].contains("HELLEVOETSLUIS"))
+                        Hellevoetsluis2 += 1.0;
+
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bReader != null) {
+                try {
+                    bReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        System.out.println("TESTDINGETJE"+ " " + Stad2);
+    }
+
+
+
     @Override
     public void getColours() {
         BufferedReader bReader = null;

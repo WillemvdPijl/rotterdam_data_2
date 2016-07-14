@@ -28,18 +28,6 @@
         android:weightSum="1">
 
 
-        <EditText
-            android:layout_width="183dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/TFaddress" />
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Search"
-            android:id="@+id/Bsearch"
-            android:onClick="onSearch"
-            android:layout_weight="0.32" />
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"

@@ -73,39 +73,39 @@
             android:exported="false"/>
         <activity
             android:name="topkek_mobile.BasicFunctions.DateActivity"
-            android:label="@string/app_name"
+            android:label="Date"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.CentrumChart"
-            android:label="@string/app_name"
+            android:label="Centrum"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.CharloisChart"
-            android:label="@string/app_name"
+            android:label="Charlois"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.DelfshavenChart"
-            android:label="@string/app_name"
+            android:label="Delfshaven"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.FeijenoordChart"
-            android:label="@string/app_name"
+            android:label="Feijenoord"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.CrooswijkCharts"
-            android:label="@string/app_name"
+            android:label="Crooswijk"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.HillegersbergCharts"
-            android:label="@string/app_name"
+            android:label="Hillegersberg"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.NoordCharts"
-            android:label="@string/app_name"
+            android:label="Noord"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.OverschieCharts"
-            android:label="@string/app_name"
+            android:label="Overschie"
             android:screenOrientation="portrait"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -124,23 +124,83 @@
             android:label="@string/title_activity_maps"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.PernisChart"
-            android:label="@string/app_name"
+            android:label="Pernis"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.IJsselmondeChart"
-            android:label="@string/app_name"
+            android:label="Ijsselmonde"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.WestChart"
-            android:label="@string/app_name"
+            android:label="West"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.HoogvlietChart"
-            android:label="@string/app_name"
+            android:label="Hoogvliet"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="topkek_mobile.BasicFunctions.OmmoordChart"
-            android:label="@string/app_name"
+            android:label="Ommoord"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.GazChart"
+            android:label="Gazelle"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.BatChart"
+            android:label="Batavus"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.PeuChart"
+            android:label="Peugeot"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.SpaChart"
+            android:label="Sparta"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.GiaChart"
+            android:label="Giant"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.UniChart"
+            android:label="Union"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.YahChart"
+            android:label="Yamaha"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.TomChart"
+            android:label="Tomos"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.PiaChart"
+            android:label="Piaggio"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.VesChart"
+            android:label="Vespa"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.GilChart"
+            android:label="Gilera"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.SymChart"
+            android:label="Sym"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.PoiChart"
+            android:label="Pointer"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.AltChart"
+            android:label="Alta"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="topkek_mobile.BasicFunctions.OveChart"
+            android:label="Overig"
             android:screenOrientation="portrait"></activity>
         <receiver android:name="topkek_mobile.BasicFunctions.AlarmReceiver" android:process=":remote" />
     </application>

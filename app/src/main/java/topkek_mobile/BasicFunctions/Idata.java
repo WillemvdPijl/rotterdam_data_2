@@ -15,4 +15,16 @@ public interface Idata {
     void getColours();
 
     void getGroupChart();
+
+    void getGazelle();
+
+    void getPeugeot();
+
+    void getSparta();
+
+    void getGiant();
+
+    void getUnion();
+
+    void getYamaha();
 }
